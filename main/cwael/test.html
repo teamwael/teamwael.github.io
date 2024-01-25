@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <p id="testParagraph" dir="rtl">اختبار اللغة</p>
+    <button onclick="changeLanguage()">Switch Language</button>
+
+    <script>
+        function changeLanguage() {
+            var paragraph = document.getElementById("testParagraph");
+
+            // Check the current language
+            if (paragraph.getAttribute("dir") === "rtl") {
+                // Switch to English
+                paragraph.textContent = "Language Test";
+                paragraph.setAttribute("dir", "ltr");
+            } else {
+                // Switch to Arabic
+                paragraph.textContent = "اختبار اللغة";
+                paragraph.setAttribute("dir", "rtl");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
