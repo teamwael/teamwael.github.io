@@ -1345,27 +1345,28 @@ margin-left: 68px!important;}
 
 
 		@media only screen and (max-width: 700px) {
-			body{border:3px solid red}
+			body{border:5px solid red!important}
 		}
 
 
 		@media only screen and (max-width: 600px) {
-			body{border:3px solid green}
+			body{border:5px solid green!important}
+
 		}
 
 
 		@media only screen and (max-width: 500px) {
-			body{border:3px solid blue}
+			body{border:5px solid blue!important}
 		}
 
 
 		@media only screen and (max-width: 400px) {
-			body{border:3px solid yellow}
+			body{border:5px solid yellow!important}
 		}
 
 
 		@media only screen and (max-width: 300px) {
-			body{border:3px solid black}
+			body{border:5px solid black!important}
 		}
 
 
