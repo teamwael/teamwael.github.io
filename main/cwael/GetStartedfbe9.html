@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+
+<!-- Mirrored from www.eslamkamel.co/EslamKamel/GetStarted?culture=ar-EG by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 15:19:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/rtl.css" />
+    <link rel="icon" type="image/x-icon" href="../images/flags/logo.png">
+
+    <title>Elsam Kamel</title>
+    <style>
+        .grid-layout{
+            display: grid;
+            height: auto;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto;
+        }
+        .social-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .social-float-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3b5998;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .social-float-button:hover {
+                background-color: #2f4a88;
+            }
+
+        .social-float-icons {
+            position: absolute;
+            display: none;
+            bottom: 70px;
+            transition: .4s;
+            overflow: hidden;
+            height: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+            .social-float-icons a {
+                display: block;
+                margin-bottom: 5px;
+                color: #666;
+                transition: all 0.3s ease;
+                font-size: 20px;
+            }
+
+                .social-float-icons a:hover {
+                    color: #3b5998;
+                }
+
+        .social-float.open .social-float-button {
+            background-color: #2f4a88;
+        }
+
+        .social-float.open .social-float-icons {
+            display: flex;
+            animation: show .2s linear forwards;
+        }
+
+        @keyframes show {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 180px;
+            }
+        }
+
+
+        .watch-div {
+            position: relative;
+            display: block
+        }
+
+            .watch-div .text {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.212);
+                text-align: center;
+            }
+
+                .watch-div .text .icon {
+                    font-size: 55px;
+                }
+
+                .watch-div .text p {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: left;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    margin: 0
+                }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- indicator nav -->
+    <!-- start -->
+    <div class="indicator-nav d-none d-md-flex">
+        <div class="active"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- end -->
+    <!-- navbar -->
+    <!-- start -->
+    <nav style="z-index: 9999;" class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="f-poppins fw-bolder">
+                    Eslam kamel
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-line"></span>
+                <span class="navbar-toggler-line"></span>
+                <span class="navbar-toggler-line"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../indexfbe9.html?culture=ar-EG">الرئيسية</a>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a href="../index.html#servies" class="nav-link">خدمات التدريب عبر الإنترنت</a>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a href="../index.html#about" class="nav-link">عن اسلام كامل</a>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a href="../index.html#transform" class="nav-link">
+                                التحولات الجسمانية
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Programsfbe9.html?culture=ar-EG">البرامج</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GetStarted.html">
+                                &#x62E;&#x637;&#x637; &#x627;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628; &#x627;&#x644;&#x634;&#x62E;&#x635;&#x64A; &#x623;&#x648;&#x646;&#x644;&#x627;&#x64A;&#x646;
+                            </a>
+
+                        </li>
+                        <li class="nav-item pointer text-center d-flex align-items-center">
+                            <button class=" btn btn-warning mx-auto bg-warning">
+                                <a class="text-white" href="CalorieCalculator.html">
+                                    &#x62D;&#x627;&#x633;&#x628;&#x629; &#x627;&#x644;&#x633;&#x639;&#x631;&#x627;&#x62A; &#x627;&#x644;&#x62D;&#x631;&#x627;&#x631;&#x64A;&#x629;
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item pointer text-center d-flex align-items-center">
+                            
+
+
+<style>
+    .lang-btn {
+        border: 1px solid;
+        padding: 3px 9px !important;
+        border-radius: 6px;
+    }
+</style>
+
+    <a href="GetStartedfb48.html?culture=en-US&amp;returnUrl=~/EslamKamel/GetStarted" class="nav-link en-font lang-btn my-2 my-xl-0 mx-auto" title="English">
+       English
+    </a>
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+
+    <!-- end -->
+    
+ <!-- general style -->
+<link rel="stylesheet" href="../css/general/style.css">
+
+<!-- bootstrap CSS -->
+<link rel="stylesheet" href="../lib/boststrap/bootstrap.min.css">
+<link rel="stylesheet" href="../lib/HTML5-Video-Lightbox-VideoPopup/css/videopopup.css">
+
+<!-- fontawesome CSS -->
+<link rel="stylesheet" href="../lib/fontawesome/css/all.min.css">
+<!-- navbar style -->
+<link rel="stylesheet" href="../css/common-component/nav/nav.css">
+
+<!-- home style -->
+<link rel="stylesheet" href="../css/get-started/style.css">
+
+<style>
+    body {
+        position: relative;
+    }
+
+    .hero .bg {
+        display: none
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            background-image: none;
+            background-color: black;
+        }
+
+            .hero .bg {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 30%;
+                object-fit: cover;
+                display: block
+            }
+    }
+
+    .back-to-home {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        z-index: 1500;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 30px;
+        background-color: #ffc130d5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .back-to-home a {
+            color: black;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+    .spinner-wrapper {
+        display: flex;
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        font-size: 30px;
+        left: 0;
+        background: #000;
+        color: #fff
+    }
+</style>
+
+
+<div style="display: none" id="spinner" class="spinner-wrapper">
+    <div class="text-center">
+        <span class="fa fa-spinner fa-spin"></span>
+
+    </div>
+</div>
+<!-- start -->
+    <header class="hero" style="background-image: url('../images/04d8b7ba-dcd1-47be-8668-7cf21f8a3a0cpaymentbg.jpg');">
+        <img class="bg" src="../images/87f3a676-026f-4f01-95ce-a0ee4d5274fbpaymentbg.jpg" />
+
+        <div class="overlay d-md-none"></div>
+        <div class="container">
+            <h2>البرامج</h2>
+            <div class="dividor">
+                <div class="left-side">
+                    <div class="top">
+                        <img src="../images/get-started/silver.png" alt="silver">
+                        <h3>الفضية </h3>
+                      
+                        <span style="white-space: pre-line">
+                            &#x62E;&#x637;&#x629; &#x645;&#x62E;&#x635;&#x635;&#x629; &#x644;&#x643; &#x644;&#x645;&#x62F;&#x629; 12 &#x623;&#x633;&#x628;&#x648;&#x639;&#x64B;&#x627;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+                        </span>
+                    </div>
+                    <div class="middle">
+                        <div class="lefto egpView">
+                            <h4>2500&#x66B;00<sub>جم</sub></h4>
+                                <span>بدلا من 3500&#x66B;00 جم </span>
+
+                        </div>
+                        <div class="righto usdView">
+                            <h4>100&#x66B;00<sub>دولار</sub></h4>
+                                <span>بدلا من 200&#x66B;00 دولار</span>
+
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                                <li>&#x62E;&#x637;&#x629; &#x62A;&#x63A;&#x630;&#x64A;&#x629; &#x645;&#x62E;&#x635;&#x635;&#x629;</li>
+                                <li>&#x643;&#x62A;&#x627;&#x628; &#x62A;&#x62F;&#x631;&#x64A;&#x628;&#x627;&#x62A; &#x645;&#x648;&#x636;&#x62D; &#x628;&#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A;</li>
+                                <li>&#x643;&#x62A;&#x627;&#x628; &#x62A;&#x62D;&#x636;&#x64A;&#x631; &#x648;&#x62C;&#x628;&#x627;&#x62A; &#x645;&#x648;&#x636;&#x62D; &#x628;&#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A;</li>
+                                <li>&#x645;&#x62A;&#x627;&#x628;&#x639;&#x629; &#x644;&#x62A;&#x63A;&#x64A;&#x631; &#x627;&#x644;&#x62E;&#x637;&#x647; &#x634;&#x647;&#x631;&#x64A;&#x622;</li>
+                                <li>&#x645;&#x62A;&#x627;&#x628;&#x639;&#x629; &#x645;&#x633;&#x62A;&#x645;&#x631;&#x647; &#x648; &#x631;&#x62F; &#x62E;&#x644;&#x627;&#x644; 72 &#x633;&#x627;&#x639;&#x647; &#x639;&#x644;&#x64A; &#x645;&#x62F;&#x627;&#x631; &#x627;&#x644;&#x627;&#x633;&#x628;&#x648;&#x639;</li>
+
+                        </ul>
+                    </div>
+                    <div class="text-center mt-3 w-100">
+                        <a class="btn btn-block egpView w-100 rounded-1 btn-silver" href="PackageSelectedfc66.html?curency=EGP&amp;Id=1">ابدأ الان</a>
+                        <a class="btn btn-block usdView w-100 rounded-1 btn-silver" href="PackageSelected2616.html?curency=USD&amp;Id=1">إبدأ الآن</a>
+
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="top">
+                        <img src="../images/get-started/gold.png" alt="gold">
+                        <h3>مميز</h3>
+                        <span style="white-space: pre-line">
+                           &#x62E;&#x637;&#x629; &#x645;&#x62E;&#x635;&#x635;&#x629; &#x644;&#x643; &#x644;&#x645;&#x62F;&#x629; 12 &#x623;&#x633;&#x628;&#x648;&#x639;&#x64B;&#x627;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+                        </span>
+                    </div>
+                    <div class="middle">
+                        <div class="lefto egpView">
+                            <h4>3500&#x66B;00<sub>جم</sub></h4>
+                                <span>بدلا من 5000&#x66B;00 جم </span>
+                        </div>
+                        <div class="righto usdView">
+                            <h4>150&#x66B;00<sub>دولار</sub></h4>
+                                <span>بدلا من 200&#x66B;00 دولار</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                                <li>&#x62E;&#x637;&#x629; &#x62A;&#x63A;&#x630;&#x64A;&#x629; &#x645;&#x62E;&#x635;&#x635;&#x629;</li>
+                                <li>&#x643;&#x62A;&#x627;&#x628; &#x62A;&#x62F;&#x631;&#x64A;&#x628;&#x627;&#x62A; &#x645;&#x648;&#x636;&#x62D; &#x628;&#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A; </li>
+                                <li>&#x643;&#x62A;&#x627;&#x628; &#x62A;&#x62D;&#x636;&#x64A;&#x631; &#x648;&#x62C;&#x628;&#x627;&#x62A; &#x645;&#x648;&#x636;&#x62D; &#x628;&#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A;</li>
+                                <li>&#x643;&#x62A;&#x627;&#x628; &#x633;/&#x62C; &#x64A;&#x632;&#x64A;&#x62F; &#x639;&#x646; 100 &#x633;&#x624;&#x627;&#x644; &#x648; &#x645;&#x648;&#x636;&#x62D; &#x628;&#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A;</li>
+                                <li>&#x645;&#x62A;&#x627;&#x628;&#x639;&#x629; &#x644;&#x62A;&#x63A;&#x64A;&#x631; &#x627;&#x644;&#x62E;&#x637;&#x647; &#x627;&#x633;&#x628;&#x648;&#x639;&#x64A;&#x622;</li>
+                                <li> &#x645;&#x62A;&#x627;&#x628;&#x639;&#x629; &#x634;&#x62E;&#x635;&#x64A;&#x647; &#x62E;&#x644;&#x627;&#x644; &#x662;&#x664; &#x633;&#x627;&#x639;&#x647;</li>
+                                <li>&#x627;&#x644;&#x62A;&#x648;&#x627;&#x635;&#x644; &#x639;&#x646; &#x637;&#x631;&#x64A;&#x642; &#x645;&#x643;&#x627;&#x644;&#x645;&#x627;&#x62A; &#x647;&#x627;&#x62A;&#x641;&#x64A;&#x629; &#x665; &#x645;&#x631;&#x627;&#x62A; &#x641;&#x64A; &#x627;&#x644;&#x627;&#x633;&#x628;&#x648;&#x639;</li>
+
+                        </ul>
+                    </div>
+                    <div class="text-center mt-3 w-100">
+                        <a class="btn btn-block usdView w-100 rounded-1 btn-gold" href="PackageSelected0e01.html?curency=USD&amp;Id=2">ابدأ الان</a>
+                        <a class="btn btn-block egpView w-100 rounded-1 btn-gold" href="PackageSelected09a7.html?curency=EGP&amp;Id=2">ابدأ الان</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center position-relative d-none d-md-block mt-3 w-100">
+                <a class="btn  rounded-1 btn-light glightbox  "
+                   href="../images/f5d7e716-8f5b-41be-8527-c7d8a9175d5dtrim.39BBA48D-23B4-4C11-A86B-2D09115ABA53.qt"> <i class="fa fa-play icon"></i> إعرف المزيد</a>
+            </div>
+            <a href="../images/f5d7e716-8f5b-41be-8527-c7d8a9175d5dtrim.39BBA48D-23B4-4C11-A86B-2D09115ABA53.qt" class="rounded-3 overflow-hidden w-100 glightbox watch-div d-md-none mx-auto my-3" style="max-width: 400px;">
+                <div class="text">
+                    <i class="fa fa-play icon"></i>
+                    <p>إعرف المزيد</p>
+                </div>
+                <img onerror="this.src = '../images/home/mobile/watch.png'" src="../images/a4bca86d-09af-4b87-8c6f-c96f28870af6GOLD%20VS%20SILVER.jpg" class="h-100 w-100 " style="object-fit: cover;" alt="">
+            </a>
+        </div>
+
+    </header>
+
+<footer class="bg-black py-3" style="z-index: 999; position: relative; bottom: 0; width: 100%;">
+    <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-md-between">
+            <div class="col-md-4 col-12 text-center text-md-start">
+                <h4 class="f-poppins text-white fw-bolder">
+
+                    Eslam kamel
+                </h4>
+
+
+            </div>
+
+
+            <div class="col-md-4 col-12 mb-2 mb-md-0 text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-3 fs-5 text-white">
+                    <a target="_blank" class="text-white" href="https://www.facebook.com/eslam.kamel.944023?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" class="text-white" href="https://www.tiktok.com/@eslam_kamelek?_t=8amdNJx5KLu&amp;_r=1"><i class="fab fa-tiktok"></i></a>
+                    <a target="_blank" class="text-white" href="https://instagram.com/eslamkamel.ek?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" class="text-white" href="https://wa.me/2001144178874"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12 text-white text-center text-md-end">
+                    <span>
+                        2023 &copy; كل الحقوق محفوظة
+                    </span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end -->
+<!-- jquery js -->
+<script src="../lib/jquery/jquery-3.6.3.min.js"></script>
+
+<!-- bootstrap js -->
+<script src="../lib/boststrap/bootstrap.bundle.min.js"></script>
+
+<script src="../js/nav.js"></script>
+
+
+<script src="../lib/HTML5-Video-Lightbox-VideoPopup/js/videopopup.js"></script>
+<script>
+
+    $(function () {
+        // ?? Get country
+        ipLookUp();
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+
+    });
+
+</script>
+
+
+
+    <div class="social-float">
+        <div class="social-float-button">
+            <i class="fas fa-message"></i>
+        </div>
+        <div class="social-float-icons">
+            <a target="_blank" href="https://www.facebook.com/eslam.kamel.944023?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@eslam_kamelek?_t=8amdNJx5KLu&amp;_r=1"><i class="fab fa-tiktok"></i></a>
+            <a target="_blank" href="https://instagram.com/eslamkamel.ek?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://wa.me/2001144178874"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <script>
+        $('.navbar-nav .nav-item').click(function () {
+            $('.navbar-collapse').removeClass('show')
+        });
+
+        $('.social-float').on('click', function () {
+            $('.social-float').toggleClass('open')
+        })
+
+        $(document).on('click', function (event) {
+            if (!$(event.target).is(".social-float") && !$(event.target).closest(".social-float").length) {
+
+                $('.social-float').removeClass('open')
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        const phonePattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+        $(document).ready(function () {
+
+           
+        });
+     
+
+
+        function ipLookUp() {
+            $('#spinner').show();
+            var country = "";
+            // Set endpoint and your access key
+            const url = 'https://freeipapi.com/api/json';
+            $.ajax({
+                url: url,
+                method: 'GET',
+                success: function (data) {
+                    if (data) {
+                        country = data.countryName;
+                        $('#spinner').hide();
+                        if (country.includes("Egypt")) {
+                            $('.usdView').hide();
+
+                        } else {
+                            $('.egpView').hide();
+                        }
+                    }
+                },
+                error: function (error) {
+                    $('#spinner').hide();
+                    $('.usdView').hide();
+                }
+            });
+        }
+    </script>
+</body>
+
+
+<!-- Mirrored from www.eslamkamel.co/EslamKamel/GetStarted?culture=ar-EG by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 15:19:11 GMT -->
+</html>

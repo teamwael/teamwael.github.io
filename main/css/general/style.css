@@ -1,0 +1,132 @@
+/** Poppins Font **/
+@import url("../../fonts/poppins.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ar-font {
+    font-family: 'Cairo', sans-serif;
+}
+.en-font {
+    font-family: "Poppins", sans-serif;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button{
+    text-transform: capitalize !important;
+}
+
+:root {
+    --mainColor: #fad104;
+    --textColor: #0d0b0d;
+    --subTextColor: #151515;
+    --bs-body-font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    font-family: "Poppins", sans-serif !important;
+    height: 100%;
+    overflow-x: hidden
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+html[dir="rtl"] body {
+    text-align: right;
+}
+
+input[type="radio"] {
+    outline: none;
+}
+
+.my-radio {
+    overflow: hidden;
+}
+
+    .my-radio input {
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .my-radio label {
+        padding: 10px;
+        display: inline-grid;
+        grid-template-columns: auto 1fr;
+        /* align-items: center; */
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+        .my-radio label::before {
+            content: " ";
+            height: 20px;
+            width: 20px;
+            background-color: transparent;
+            border-radius: 50%;
+            display: inline-flex;
+            border: 3px solid #fff;
+            margin: 0 5px;
+            margin-top: 3px;
+        }
+
+    .my-radio input:checked + label {
+        background-color: #fff;
+        color: #000;
+    }
+
+        .my-radio input:checked + label::before {
+            background-color: #000;
+            border: 3px solid #fff;
+        }
+
+
+

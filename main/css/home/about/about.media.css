@@ -1,0 +1,60 @@
+.about-mobile {
+    background-color: black;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+    .about-mobile .about-content {
+        padding: 65px 0;
+        margin-bottom: 30px;
+        position: relative;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, .1);
+        border-radius: 16px;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        width: 100%;
+        white-space: pre-line;
+    }
+
+    .about-mobile ul {
+        padding: 0;
+    }
+
+    .about-mobile .about-content > ul > li {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400px;
+        white-space: pre-line;
+    }
+
+    .about-mobile > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .about-mobile > ul > li {
+            padding: 60px 20px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: pre-line;
+        }
+
+            .about-mobile > ul > li:nth-child(1) {
+                background-image: url("../../../images/bgs/about_bg.jpg");
+            }
+
+            .about-mobile > ul > li:nth-child(2) {
+                background-image: url("../../../images/bgs/header.jpg");
+            }
+
+            .about-mobile > ul > li:nth-child(3) {
+                background-image: url("../../../images/home/mobile/about-bg.png");
+            }

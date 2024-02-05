@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+
+<!-- Mirrored from www.eslamkamel.co/?culture=ar-EG by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 15:18:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/rtl.css" />
+    <link rel="icon" type="image/x-icon" href="images/flags/logo.png">
+
+    <title>Elsam Kamel</title>
+    <style>
+        .grid-layout{
+            display: grid;
+            height: auto;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto;
+        }
+        .social-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .social-float-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3b5998;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .social-float-button:hover {
+                background-color: #2f4a88;
+            }
+
+        .social-float-icons {
+            position: absolute;
+            display: none;
+            bottom: 70px;
+            transition: .4s;
+            overflow: hidden;
+            height: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+            .social-float-icons a {
+                display: block;
+                margin-bottom: 5px;
+                color: #666;
+                transition: all 0.3s ease;
+                font-size: 20px;
+            }
+
+                .social-float-icons a:hover {
+                    color: #3b5998;
+                }
+
+        .social-float.open .social-float-button {
+            background-color: #2f4a88;
+        }
+
+        .social-float.open .social-float-icons {
+            display: flex;
+            animation: show .2s linear forwards;
+        }
+
+        @keyframes show {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 180px;
+            }
+        }
+
+
+        .watch-div {
+            position: relative;
+            display: block
+        }
+
+            .watch-div .text {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.212);
+                text-align: center;
+            }
+
+                .watch-div .text .icon {
+                    font-size: 55px;
+                }
+
+                .watch-div .text p {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: left;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    margin: 0
+                }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- indicator nav -->
+    <!-- start -->
+    <div class="indicator-nav d-none d-md-flex">
+        <div class="active"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- end -->
+    <!-- navbar -->
+    <!-- start -->
+    <nav style="z-index: 9999;" class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="f-poppins fw-bolder">
+                    Eslam kamel
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-line"></span>
+                <span class="navbar-toggler-line"></span>
+                <span class="navbar-toggler-line"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="indexfbe9.html?culture=ar-EG">الرئيسية</a>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a href="index.html#servies" class="nav-link">خدمات التدريب عبر الإنترنت</a>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a href="index.html#about" class="nav-link">عن اسلام كامل</a>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a href="index.html#transform" class="nav-link">
+                                التحولات الجسمانية
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="EslamKamel/Programsfbe9.html?culture=ar-EG">البرامج</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="EslamKamel/GetStarted.html">
+                                &#x62E;&#x637;&#x637; &#x627;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628; &#x627;&#x644;&#x634;&#x62E;&#x635;&#x64A; &#x623;&#x648;&#x646;&#x644;&#x627;&#x64A;&#x646;
+                            </a>
+
+                        </li>
+                        <li class="nav-item pointer text-center d-flex align-items-center">
+                            <button class=" btn btn-warning mx-auto bg-warning">
+                                <a class="text-white" href="EslamKamel/CalorieCalculator.html">
+                                    &#x62D;&#x627;&#x633;&#x628;&#x629; &#x627;&#x644;&#x633;&#x639;&#x631;&#x627;&#x62A; &#x627;&#x644;&#x62D;&#x631;&#x627;&#x631;&#x64A;&#x629;
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item pointer text-center d-flex align-items-center">
+                            
+
+
+<style>
+    .lang-btn {
+        border: 1px solid;
+        padding: 3px 9px !important;
+        border-radius: 6px;
+    }
+</style>
+
+    <a href="indexfb48.html?culture=en-US&amp;returnUrl=~/" class="nav-link en-font lang-btn my-2 my-xl-0 mx-auto" title="English">
+       English
+    </a>
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+
+    <!-- end -->
+    <!-- general style -->
+<link rel="stylesheet" href="css/general/style.css">
+
+<!-- bootstrap CSS -->
+<link rel="stylesheet" href="lib/boststrap/bootstrap.min.css">
+
+<!-- fontawesome CSS -->
+<link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+
+<!-- swiper CSS -->
+<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+
+<!-- navbar style -->
+<link rel="stylesheet" href="css/common-component/nav/nav.css">
+<link rel="stylesheet" href="lib/HTML5-Video-Lightbox-VideoPopup/css/videopopup.css">
+
+<!-- home style -->
+<link rel="stylesheet" href="css/home/style.css">
+
+<style>
+    body {
+        position: relative;
+    }
+
+    .indicator-nav {
+        background-color: rgba(0, 0, 0, 0.659);
+        position: fixed;
+        z-index: 1600;
+        top: 50%;
+        right: 10px;
+        width: 50px;
+        height: 200px;
+        transform: translateY(-50%);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    html[dir="rtl"] .indicator-nav {
+        right: auto;
+        left: 10px;
+    }
+
+    .indicator-nav div {
+        background-color: white;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+        .indicator-nav div.active {
+            background-color: #FFF;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+    .transformation ul li img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+</style>
+<!-- hero section -->
+<!-- start -->
+    <div id="" class="page">
+        <header class="hero desktop">
+            <div class="container">
+                <div class="dividor col-md-6">
+                    <h2 class="">
+                        &#x644;&#x627; &#x62A;&#x63A;&#x627;&#x62F;&#x631; &#x627;&#x644;&#x639;&#x627;&#x644;&#x645; &#x62F;&#x648;&#x646; &#x623;&#x62B;&#x631;
+                    </h2>
+                    <p class="fw-bold">
+                        &#x625;&#x630;&#x627; &#x643;&#x646;&#x62A; &#x62A;&#x631;&#x64A;&#x62F; &#x62A;&#x63A;&#x64A;&#x64A;&#x631; &#x62C;&#x633;&#x62F;&#x643; &#x60C; &#x641;&#x639;&#x644;&#x64A;&#x643; &#x623;&#x646; &#x62A;&#x63A;&#x64A;&#x631; &#x631;&#x623;&#x64A;&#x643; &#x623;&#x648;&#x644;&#x627;&#x64B; .. &#x648;&#x62A;&#x642;&#x648;&#x644; &#x625;&#x646;&#x646;&#x64A; &#x644;&#x627; &#x623;&#x62A;&#x631;&#x643; &#x647;&#x630;&#x627; &#x627;&#x644;&#x639;&#x627;&#x644;&#x645; &#x62F;&#x648;&#x646; &#x627;&#x644;&#x648;&#x635;&#x648;&#x644; &#x625;&#x644;&#x649; &#x623;&#x647;&#x62F;&#x627;&#x641;&#x64A;.
+                    </p>
+                    <div style="max-width: 100%;" class="btn-bg w-auto row row-cols-2 g-3">
+                        <div class="col-auto">
+                            <button class="w-auto"><a href="EslamKamel/GetStarted.html">&#x627;&#x628;&#x62F;&#x623; &#x627;&#x644;&#x627;&#x646;</a></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div style="  " class="hero-mobile mobile">
+            <div class="img-con  ">
+                    <video id="headerVid" class="w-100" muted autoplay loop>
+                        <source src="images/4bf796d6-11c3-43b1-b113-fff2dc8fa567trim.28923666-21C3-40F0-AC55-4D977BF8BA09.qt" type="video/mp4" />
+                    </video>
+            </div>
+            <div class="container">
+                <div class="dividor" style="bottom: 0;">
+                    <h2 class="mb-3 p-2">
+                        &#x644;&#x627; &#x62A;&#x63A;&#x627;&#x62F;&#x631; &#x627;&#x644;&#x639;&#x627;&#x644;&#x645; &#x62F;&#x648;&#x646; &#x623;&#x62B;&#x631;
+                    </h2>
+                    <a class="w-75" href="EslamKamel/GetStarted.html">&#x627;&#x628;&#x62F;&#x623; &#x627;&#x644;&#x627;&#x646;</a>
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="servies" class="page">
+        <section class="our-services desktop">
+            <div class="container">
+                <h2 class="">ماذا يتضمن تدريبك الخاص</h2>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="dividor">
+                                    <div class="img-con">
+                                            <img src="images/30713d79-8cfb-4cd9-8a2d-b12c5a884e17our-services.png" alt="&#x627;&#x644;&#x627;&#x62A;&#x635;&#x627;&#x644; &#x627;&#x644;&#x645;&#x628;&#x627;&#x634;&#x631;">
+                                    </div>
+                                    <div class="our-services-content">
+                                        <h4 class="fw-bold">&#x627;&#x644;&#x627;&#x62A;&#x635;&#x627;&#x644; &#x627;&#x644;&#x645;&#x628;&#x627;&#x634;&#x631;</h4>
+                                        <p>
+                                            &#x62A;&#x648;&#x62C;&#x64A;&#x647; &#x627;&#x644;&#x62F;&#x639;&#x645; &#x627;&#x644;&#x641;&#x631;&#x62F;&#x64A; &#x639;&#x628;&#x631; &#x627;&#x644;&#x625;&#x646;&#x62A;&#x631;&#x646;&#x62A; &#x644;&#x637;&#x631;&#x62D; &#x627;&#x644;&#x623;&#x633;&#x626;&#x644;&#x629; &#x627;&#x644;&#x634;&#x62E;&#x635;&#x64A;&#x629; &#x648;&#x627;&#x644;&#x62D;&#x635;&#x648;&#x644; &#x639;&#x644;&#x649; &#x627;&#x644;&#x62A;&#x648;&#x62C;&#x64A;&#x647; &#x627;&#x644;&#x645;&#x646;&#x627;&#x633;&#x628; &#x627;&#x644;&#x630;&#x64A; &#x62A;&#x62D;&#x62A;&#x627;&#x62C;&#x647; &#x648; &#x644;&#x644;&#x62A;&#x623;&#x643;&#x62F; &#x645;&#x646; &#x641;&#x647;&#x645; &#x627;&#x644;&#x62E;&#x637;&#x629; &#x627;&#x644;&#x62A;&#x64A; &#x62A;&#x644;&#x642;&#x64A;&#x62A;&#x647;&#x627; &#x648;&#x627;&#x644;&#x62A;&#x63A;&#x644;&#x628; &#x639;&#x644;&#x649; &#x623;&#x64A; &#x645;&#x634;&#x627;&#x643;&#x644; &#x639;&#x646;&#x62F; &#x638;&#x647;&#x648;&#x631;&#x647;&#x627;.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dividor">
+                                    <div class="img-con">
+                                            <img src="images/80c2dbaa-85b0-4889-9bcd-357413fa858dour-services.png" alt="&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x64A; &#x623;&#x633;&#x628;&#x648;&#x639;&#x64A;&#x627;">
+                                    </div>
+                                    <div class="our-services-content">
+                                        <h4 class="fw-bold">&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x64A; &#x623;&#x633;&#x628;&#x648;&#x639;&#x64A;&#x627;</h4>
+                                        <p>
+                                            &#x627;&#x644;&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x64A; &#x648;&#x627;&#x644;&#x62A;&#x62D;&#x641;&#x64A;&#x632; &#x648;&#x627;&#x644;&#x62F;&#x639;&#x645; &#x645;&#x646;&#x64A; &#x64A;&#x648;&#x641;&#x631; &#x644;&#x643; &#x627;&#x644;&#x62A;&#x648;&#x62C;&#x64A;&#x647; &#x648;&#x627;&#x644;&#x641;&#x631;&#x635;&#x629; &#x644;&#x62A;&#x639;&#x62F;&#x64A;&#x644; &#x62E;&#x637;&#x62A;&#x643; &#x623;&#x62B;&#x646;&#x627;&#x621; &#x62A;&#x642;&#x62F;&#x645;&#x643;  &#x627;&#x648; &#x62A;&#x62A;&#x637;&#x648;&#x631; &#x627;&#x62D;&#x62A;&#x64A;&#x627;&#x62C;&#x627;&#x62A;&#x643; / &#x623;&#x647;&#x62F;&#x627;&#x641;&#x643;.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dividor">
+                                    <div class="img-con">
+                                            <img src="images/1064bc4a-3f7e-4675-8a38-829afaf9e57eour-services.png" alt="&#x62E;&#x637;&#x629; &#x62A;&#x63A;&#x630;&#x64A;&#x629; &#x645;&#x62E;&#x635;&#x635;&#x629; &#x644;&#x643;">
+                                    </div>
+                                    <div class="our-services-content">
+                                        <h4 class="fw-bold">&#x62E;&#x637;&#x629; &#x62A;&#x63A;&#x630;&#x64A;&#x629; &#x645;&#x62E;&#x635;&#x635;&#x629; &#x644;&#x643;</h4>
+                                        <p>
+                                            &#x62E;&#x637;&#x637; &#x644;&#x648;&#x62C;&#x628;&#x627;&#x62A; &#x635;&#x62D;&#x64A;&#x629; &#x648;&#x645;&#x63A;&#x630;&#x64A;&#x629; &#x63A;&#x64A;&#x631;&#x645;&#x642;&#x64A;&#x62F;&#x629; &#x645;&#x635;&#x645;&#x645;&#x629; &#x62E;&#x635;&#x64A;&#x635;&#x64B;&#x627; &#x644;&#x643; - &#x648;&#x644;&#x648;&#x638;&#x64A;&#x641;&#x62A;&#x643; &#x648;&#x646;&#x645;&#x637; &#x62D;&#x64A;&#x627;&#x62A;&#x643; &#x648;&#x623;&#x647;&#x62F;&#x627;&#x641;&#x643; &#x648;&#x645;&#x62A;&#x637;&#x644;&#x628;&#x627;&#x62A;&#x643; &#x627;&#x644;&#x63A;&#x630;&#x627;&#x626;&#x64A;&#x629; &#x648;&#x645;&#x64A;&#x632;&#x627;&#x646;&#x64A;&#x62A;&#x643; &#x623;&#x64A;&#x636;&#x64B;&#x627; &#x644;&#x644;&#x627;&#x633;&#x62A;&#x645;&#x62A;&#x627;&#x639; &#x628;&#x646;&#x638;&#x627;&#x645; &#x63A;&#x630;&#x627;&#x626;&#x64A; &#x645;&#x62A;&#x646;&#x648;&#x639; &#x648;&#x644;&#x630;&#x64A;&#x630; &#x645;&#x645;&#x627; &#x64A;&#x62C;&#x639;&#x644;&#x647; &#x645;&#x633;&#x62A;&#x62F;&#x627;&#x645;&#x64B;&#x627; &#x639;&#x644;&#x649; &#x627;&#x644;&#x645;&#x62F;&#x649; &#x627;&#x644;&#x637;&#x648;&#x64A;&#x644;.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dividor">
+                                    <div class="img-con">
+                                            <img src="images/7d2787df-a69e-47b9-96b4-5c0eb85f0d88our-services.png" alt="&#x643;&#x62A;&#x628; &#x62A;&#x648;&#x636;&#x62D; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x62A;&#x62C;&#x647;&#x64A;&#x632; &#x648;&#x62C;&#x628;&#x627;&#x62A;&#x643;">
+                                    </div>
+                                    <div class="our-services-content">
+                                        <h4 class="fw-bold">&#x643;&#x62A;&#x628; &#x62A;&#x648;&#x636;&#x62D; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x62A;&#x62C;&#x647;&#x64A;&#x632; &#x648;&#x62C;&#x628;&#x627;&#x62A;&#x643;</h4>
+                                        <p>
+                                            &#x645;&#x639;&#x638;&#x645; &#x627;&#x644;&#x645;&#x62F;&#x631;&#x628;&#x64A;&#x646; &#x644;&#x627; &#x64A;&#x639;&#x644;&#x645;&#x648;&#x646;&#x643; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x62A;&#x62D;&#x636;&#x64A;&#x631; &#x648;&#x62C;&#x628;&#x627;&#x62A;&#x643; &#x639;&#x628;&#x631; &#x627;&#x644;&#x625;&#x646;&#x62A;&#x631;&#x646;&#x62A;. &#x644;&#x643;&#x646; &#x647;&#x630;&#x647; &#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A; &#x62A;&#x639;&#x644;&#x645;&#x643; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x627;&#x644;&#x62A;&#x62D;&#x636;&#x64A;&#x631; &#x641;&#x64A; 50 &#x637;&#x631;&#x64A;&#x642;&#x629; &#x645;&#x62E;&#x62A;&#x644;&#x641;&#x629; &#x644;&#x644;&#x627;&#x633;&#x62A;&#x645;&#x62A;&#x627;&#x639; &#x628;&#x646;&#x638;&#x627;&#x645; &#x63A;&#x630;&#x627;&#x626;&#x64A; &#x644;&#x630;&#x64A;&#x630; &#x648;&#x645;&#x62A;&#x646;&#x648;&#x639; &#x64A;&#x62C;&#x639;&#x644;&#x647; &#x645;&#x633;&#x62A;&#x62F;&#x627;&#x645;&#x64B;&#x627; &#x639;&#x644;&#x649; &#x627;&#x644;&#x645;&#x62F;&#x649; &#x627;&#x644;&#x637;&#x648;&#x64A;&#x644;.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dividor">
+                                    <div class="img-con">
+                                            <img src="images/4a01efcf-1c7f-445f-ae4b-4a90395749c8our-services.png" alt="&#x643;&#x62A;&#x628; &#x644;&#x644;&#x62A;&#x645;&#x627;&#x631;&#x64A;&#x646; &#x645;&#x648;&#x636;&#x62D;&#x629; &#x628;&#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A;">
+                                    </div>
+                                    <div class="our-services-content">
+                                        <h4 class="fw-bold">&#x643;&#x62A;&#x628; &#x644;&#x644;&#x62A;&#x645;&#x627;&#x631;&#x64A;&#x646; &#x645;&#x648;&#x636;&#x62D;&#x629; &#x628;&#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A;</h4>
+                                        <p>
+                                            &#x62A;&#x639;&#x644;&#x645;&#x643; &#x645;&#x642;&#x627;&#x637;&#x639; &#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648; &#x647;&#x630;&#x647; &#x637;&#x631;&#x64A;&#x642;&#x629; &#x627;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628; &#x628;&#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x625;&#x644;&#x649; &#x62F;&#x631;&#x648;&#x633; &#x645;&#x62D;&#x62F;&#x62F;&#x629; &#x62D;&#x648;&#x644; &#x627;&#x644;&#x62A;&#x645;&#x627;&#x631;&#x64A;&#x646; &#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A;&#x629;. &#x62A;&#x645; &#x625;&#x646;&#x634;&#x627;&#x624;&#x647;&#x627; &#x62E;&#x635;&#x64A;&#x635;&#x64B;&#x627; &#x628;&#x648;&#x627;&#x633;&#x637;&#x62A;&#x64A; &#x644;&#x632;&#x64A;&#x627;&#x62F;&#x629; &#x625;&#x645;&#x643;&#x627;&#x646;&#x64A;&#x62A;&#x643; &#x625;&#x644;&#x649; &#x623;&#x642;&#x635;&#x649; &#x62D;&#x62F; &#x648;&#x627;&#x644;&#x62A;&#x623;&#x643;&#x62F; &#x645;&#x646; &#x639;&#x62F;&#x645; &#x627;&#x644;&#x641;&#x634;&#x644; &#x641;&#x64A; &#x627;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628; &#x648; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x627;&#x644;&#x62A;&#x645;&#x631;&#x64A;&#x646; &#x628;&#x634;&#x643;&#x644; &#x641;&#x639;&#x627;&#x644;.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dividor">
+                                    <div class="img-con">
+                                            <img src="images/a27b5355-5829-480d-a188-a745cc892caeour-services.png" alt="&#x641;&#x64A;&#x62F;&#x647;&#x64A;&#x648;&#x647;&#x627;&#x62A; &#x62A;&#x639;&#x644;&#x64A;&#x645;&#x64A;&#x629; &#x644;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628;&#x627;&#x62A; &#x648;&#x627;&#x644;&#x62A;&#x64E;&#x63A;&#x630;&#x650;&#x64A;&#x64E;&#x629;">
+                                    </div>
+                                    <div class="our-services-content">
+                                        <h4 class="fw-bold">&#x641;&#x64A;&#x62F;&#x647;&#x64A;&#x648;&#x647;&#x627;&#x62A; &#x62A;&#x639;&#x644;&#x64A;&#x645;&#x64A;&#x629; &#x644;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628;&#x627;&#x62A; &#x648;&#x627;&#x644;&#x62A;&#x64E;&#x63A;&#x630;&#x650;&#x64A;&#x64E;&#x629;</h4>
+                                        <p>
+                                            &#x644;&#x62A;&#x639;&#x644;&#x645; &#x643;&#x644; &#x627;&#x644;&#x623;&#x62F;&#x648;&#x627;&#x62A; &#x627;&#x644;&#x62A;&#x64A; &#x633;&#x62A;&#x62D;&#x62A;&#x627;&#x62C;&#x647;&#x627; &#x644;&#x644;&#x62D;&#x641;&#x627;&#x638; &#x639;&#x644;&#x649; &#x646;&#x62A;&#x627;&#x626;&#x62C;&#x643; &#x645;&#x62F;&#x649; &#x627;&#x644;&#x62D;&#x64A;&#x627;&#x629;. &#x644;&#x644;&#x62A;&#x623;&#x643;&#x62F; &#x645;&#x646; &#x645;&#x639;&#x631;&#x641;&#x62A;&#x643; &#x644;&#x64A;&#x633; &#x641;&#x642;&#x637; &#x644;&#x645;&#x627; &#x64A;&#x62C;&#x628; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x647; &#x60C; &#x648;&#x644;&#x643;&#x646; &#x644;&#x645;&#x639;&#x631;&#x641;&#x629; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x62A;&#x639;&#x62F;&#x64A;&#x644; &#x646;&#x638;&#x627;&#x645;&#x643; &#x627;&#x644;&#x63A;&#x630;&#x627;&#x626;&#x64A; &#x644;&#x62C;&#x639;&#x644;&#x647; &#x645;&#x645;&#x62A;&#x639;&#x64B;&#x627; &#x648;&#x645;&#x633;&#x62A;&#x62F;&#x627;&#x645;&#x64B;&#x627; &#x648;&#x641;&#x639;&#x627;&#x644;&#x64B;&#x627; &#x62D;&#x648;&#x644; &#x627;&#x644;&#x623;&#x647;&#x62F;&#x627;&#x641; &#x627;&#x644;&#x645;&#x62A;&#x63A;&#x64A;&#x631;&#x629;.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                </div>
+</section>
+                <div class="text-center py-2 d-none d-md-block">
+                        <a class="glightbox btn btn-dark px-4 py-2" href="images/a989e0c2-d0d1-44ef-9130-cb175385819btrim.AF4638F3-AC15-4EE4-BD71-DB89D7A1ABB8.qt">
+                            <i class="fa-solid fa-play"></i>
+                            شاهد الآن
+                        </a>
+                    </div>
+        <div class="our-services-mobile mobile">
+            <div class="container">
+                <h2 class="">ماذا يتضمن تدريبك الخاص</h2>
+
+                <ul>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/9be47148-850a-4cc0-a6f9-c87fde4a6fd9followup.jpg"
+                                     alt="&#x627;&#x644;&#x627;&#x62A;&#x635;&#x627;&#x644; &#x627;&#x644;&#x645;&#x628;&#x627;&#x634;&#x631;">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">&#x627;&#x644;&#x627;&#x62A;&#x635;&#x627;&#x644; &#x627;&#x644;&#x645;&#x628;&#x627;&#x634;&#x631;</h4>
+                                <p>
+                                    &#x62A;&#x648;&#x62C;&#x64A;&#x647; &#x627;&#x644;&#x62F;&#x639;&#x645; &#x627;&#x644;&#x641;&#x631;&#x62F;&#x64A; &#x639;&#x628;&#x631; &#x627;&#x644;&#x625;&#x646;&#x62A;&#x631;&#x646;&#x62A; &#x644;&#x637;&#x631;&#x62D; &#x627;&#x644;&#x623;&#x633;&#x626;&#x644;&#x629; &#x627;&#x644;&#x634;&#x62E;&#x635;&#x64A;&#x629; &#x648;&#x627;&#x644;&#x62D;&#x635;&#x648;&#x644; &#x639;&#x644;&#x649; &#x627;&#x644;&#x62A;&#x648;&#x62C;&#x64A;&#x647; &#x627;&#x644;&#x645;&#x646;&#x627;&#x633;&#x628; &#x627;&#x644;&#x630;&#x64A; &#x62A;&#x62D;&#x62A;&#x627;&#x62C;&#x647; &#x648; &#x644;&#x644;&#x62A;&#x623;&#x643;&#x62F; &#x645;&#x646; &#x641;&#x647;&#x645; &#x627;&#x644;&#x62E;&#x637;&#x629; &#x627;&#x644;&#x62A;&#x64A; &#x62A;&#x644;&#x642;&#x64A;&#x62A;&#x647;&#x627; &#x648;&#x627;&#x644;&#x62A;&#x63A;&#x644;&#x628; &#x639;&#x644;&#x649; &#x623;&#x64A; &#x645;&#x634;&#x627;&#x643;&#x644; &#x639;&#x646;&#x62F; &#x638;&#x647;&#x648;&#x631;&#x647;&#x627;.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/d3b0de01-7778-4f77-a57f-b5d1f215eeacabout_bg.jpg"
+                                     alt="&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x64A; &#x623;&#x633;&#x628;&#x648;&#x639;&#x64A;&#x627;">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x64A; &#x623;&#x633;&#x628;&#x648;&#x639;&#x64A;&#x627;</h4>
+                                <p>
+                                    &#x627;&#x644;&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x64A; &#x648;&#x627;&#x644;&#x62A;&#x62D;&#x641;&#x64A;&#x632; &#x648;&#x627;&#x644;&#x62F;&#x639;&#x645; &#x645;&#x646;&#x64A; &#x64A;&#x648;&#x641;&#x631; &#x644;&#x643; &#x627;&#x644;&#x62A;&#x648;&#x62C;&#x64A;&#x647; &#x648;&#x627;&#x644;&#x641;&#x631;&#x635;&#x629; &#x644;&#x62A;&#x639;&#x62F;&#x64A;&#x644; &#x62E;&#x637;&#x62A;&#x643; &#x623;&#x62B;&#x646;&#x627;&#x621; &#x62A;&#x642;&#x62F;&#x645;&#x643;  &#x627;&#x648; &#x62A;&#x62A;&#x637;&#x648;&#x631; &#x627;&#x62D;&#x62A;&#x64A;&#x627;&#x62C;&#x627;&#x62A;&#x643; / &#x623;&#x647;&#x62F;&#x627;&#x641;&#x643;.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/a81b0ab5-c615-4f85-8594-0e72389f1317custom_nutrition.jpg"
+                                     alt="&#x62E;&#x637;&#x629; &#x62A;&#x63A;&#x630;&#x64A;&#x629; &#x645;&#x62E;&#x635;&#x635;&#x629; &#x644;&#x643;">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">&#x62E;&#x637;&#x629; &#x62A;&#x63A;&#x630;&#x64A;&#x629; &#x645;&#x62E;&#x635;&#x635;&#x629; &#x644;&#x643;</h4>
+                                <p>
+                                    &#x62E;&#x637;&#x637; &#x644;&#x648;&#x62C;&#x628;&#x627;&#x62A; &#x635;&#x62D;&#x64A;&#x629; &#x648;&#x645;&#x63A;&#x630;&#x64A;&#x629; &#x63A;&#x64A;&#x631;&#x645;&#x642;&#x64A;&#x62F;&#x629; &#x645;&#x635;&#x645;&#x645;&#x629; &#x62E;&#x635;&#x64A;&#x635;&#x64B;&#x627; &#x644;&#x643; - &#x648;&#x644;&#x648;&#x638;&#x64A;&#x641;&#x62A;&#x643; &#x648;&#x646;&#x645;&#x637; &#x62D;&#x64A;&#x627;&#x62A;&#x643; &#x648;&#x623;&#x647;&#x62F;&#x627;&#x641;&#x643; &#x648;&#x645;&#x62A;&#x637;&#x644;&#x628;&#x627;&#x62A;&#x643; &#x627;&#x644;&#x63A;&#x630;&#x627;&#x626;&#x64A;&#x629; &#x648;&#x645;&#x64A;&#x632;&#x627;&#x646;&#x64A;&#x62A;&#x643; &#x623;&#x64A;&#x636;&#x64B;&#x627; &#x644;&#x644;&#x627;&#x633;&#x62A;&#x645;&#x62A;&#x627;&#x639; &#x628;&#x646;&#x638;&#x627;&#x645; &#x63A;&#x630;&#x627;&#x626;&#x64A; &#x645;&#x62A;&#x646;&#x648;&#x639; &#x648;&#x644;&#x630;&#x64A;&#x630; &#x645;&#x645;&#x627; &#x64A;&#x62C;&#x639;&#x644;&#x647; &#x645;&#x633;&#x62A;&#x62F;&#x627;&#x645;&#x64B;&#x627; &#x639;&#x644;&#x649; &#x627;&#x644;&#x645;&#x62F;&#x649; &#x627;&#x644;&#x637;&#x648;&#x64A;&#x644;.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/fdc203ec-8ac0-40b0-9723-96c502d7cc3cebooks.jpg"
+                                     alt="&#x643;&#x62A;&#x628; &#x62A;&#x648;&#x636;&#x62D; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x62A;&#x62C;&#x647;&#x64A;&#x632; &#x648;&#x62C;&#x628;&#x627;&#x62A;&#x643;">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">&#x643;&#x62A;&#x628; &#x62A;&#x648;&#x636;&#x62D; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x62A;&#x62C;&#x647;&#x64A;&#x632; &#x648;&#x62C;&#x628;&#x627;&#x62A;&#x643;</h4>
+                                <p>
+                                    &#x645;&#x639;&#x638;&#x645; &#x627;&#x644;&#x645;&#x62F;&#x631;&#x628;&#x64A;&#x646; &#x644;&#x627; &#x64A;&#x639;&#x644;&#x645;&#x648;&#x646;&#x643; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x62A;&#x62D;&#x636;&#x64A;&#x631; &#x648;&#x62C;&#x628;&#x627;&#x62A;&#x643; &#x639;&#x628;&#x631; &#x627;&#x644;&#x625;&#x646;&#x62A;&#x631;&#x646;&#x62A;. &#x644;&#x643;&#x646; &#x647;&#x630;&#x647; &#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A; &#x62A;&#x639;&#x644;&#x645;&#x643; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x627;&#x644;&#x62A;&#x62D;&#x636;&#x64A;&#x631; &#x641;&#x64A; 50 &#x637;&#x631;&#x64A;&#x642;&#x629; &#x645;&#x62E;&#x62A;&#x644;&#x641;&#x629; &#x644;&#x644;&#x627;&#x633;&#x62A;&#x645;&#x62A;&#x627;&#x639; &#x628;&#x646;&#x638;&#x627;&#x645; &#x63A;&#x630;&#x627;&#x626;&#x64A; &#x644;&#x630;&#x64A;&#x630; &#x648;&#x645;&#x62A;&#x646;&#x648;&#x639; &#x64A;&#x62C;&#x639;&#x644;&#x647; &#x645;&#x633;&#x62A;&#x62F;&#x627;&#x645;&#x64B;&#x627; &#x639;&#x644;&#x649; &#x627;&#x644;&#x645;&#x62F;&#x649; &#x627;&#x644;&#x637;&#x648;&#x64A;&#x644;.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/4efd820f-8e8b-47d0-b356-3566bbedc5f6workouts.jpg"
+                                     alt="&#x643;&#x62A;&#x628; &#x644;&#x644;&#x62A;&#x645;&#x627;&#x631;&#x64A;&#x646; &#x645;&#x648;&#x636;&#x62D;&#x629; &#x628;&#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A;">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">&#x643;&#x62A;&#x628; &#x644;&#x644;&#x62A;&#x645;&#x627;&#x631;&#x64A;&#x646; &#x645;&#x648;&#x636;&#x62D;&#x629; &#x628;&#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648;&#x647;&#x627;&#x62A;</h4>
+                                <p>
+                                    &#x62A;&#x639;&#x644;&#x645;&#x643; &#x645;&#x642;&#x627;&#x637;&#x639; &#x627;&#x644;&#x641;&#x64A;&#x62F;&#x64A;&#x648; &#x647;&#x630;&#x647; &#x637;&#x631;&#x64A;&#x642;&#x629; &#x627;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628; &#x628;&#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x625;&#x644;&#x649; &#x62F;&#x631;&#x648;&#x633; &#x645;&#x62D;&#x62F;&#x62F;&#x629; &#x62D;&#x648;&#x644; &#x627;&#x644;&#x62A;&#x645;&#x627;&#x631;&#x64A;&#x646; &#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A;&#x629;. &#x62A;&#x645; &#x625;&#x646;&#x634;&#x627;&#x624;&#x647;&#x627; &#x62E;&#x635;&#x64A;&#x635;&#x64B;&#x627; &#x628;&#x648;&#x627;&#x633;&#x637;&#x62A;&#x64A; &#x644;&#x632;&#x64A;&#x627;&#x62F;&#x629; &#x625;&#x645;&#x643;&#x627;&#x646;&#x64A;&#x62A;&#x643; &#x625;&#x644;&#x649; &#x623;&#x642;&#x635;&#x649; &#x62D;&#x62F; &#x648;&#x627;&#x644;&#x62A;&#x623;&#x643;&#x62F; &#x645;&#x646; &#x639;&#x62F;&#x645; &#x627;&#x644;&#x641;&#x634;&#x644; &#x641;&#x64A; &#x627;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628; &#x648; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x627;&#x644;&#x62A;&#x645;&#x631;&#x64A;&#x646; &#x628;&#x634;&#x643;&#x644; &#x641;&#x639;&#x627;&#x644;.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/19f34c1f-095e-4a7e-a103-9006846aa735nutrition_and_workouts.jpg"
+                                     alt="&#x641;&#x64A;&#x62F;&#x647;&#x64A;&#x648;&#x647;&#x627;&#x62A; &#x62A;&#x639;&#x644;&#x64A;&#x645;&#x64A;&#x629; &#x644;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628;&#x627;&#x62A; &#x648;&#x627;&#x644;&#x62A;&#x64E;&#x63A;&#x630;&#x650;&#x64A;&#x64E;&#x629;">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">&#x641;&#x64A;&#x62F;&#x647;&#x64A;&#x648;&#x647;&#x627;&#x62A; &#x62A;&#x639;&#x644;&#x64A;&#x645;&#x64A;&#x629; &#x644;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628;&#x627;&#x62A; &#x648;&#x627;&#x644;&#x62A;&#x64E;&#x63A;&#x630;&#x650;&#x64A;&#x64E;&#x629;</h4>
+                                <p>
+                                    &#x644;&#x62A;&#x639;&#x644;&#x645; &#x643;&#x644; &#x627;&#x644;&#x623;&#x62F;&#x648;&#x627;&#x62A; &#x627;&#x644;&#x62A;&#x64A; &#x633;&#x62A;&#x62D;&#x62A;&#x627;&#x62C;&#x647;&#x627; &#x644;&#x644;&#x62D;&#x641;&#x627;&#x638; &#x639;&#x644;&#x649; &#x646;&#x62A;&#x627;&#x626;&#x62C;&#x643; &#x645;&#x62F;&#x649; &#x627;&#x644;&#x62D;&#x64A;&#x627;&#x629;. &#x644;&#x644;&#x62A;&#x623;&#x643;&#x62F; &#x645;&#x646; &#x645;&#x639;&#x631;&#x641;&#x62A;&#x643; &#x644;&#x64A;&#x633; &#x641;&#x642;&#x637; &#x644;&#x645;&#x627; &#x64A;&#x62C;&#x628; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x647; &#x60C; &#x648;&#x644;&#x643;&#x646; &#x644;&#x645;&#x639;&#x631;&#x641;&#x629; &#x643;&#x64A;&#x641;&#x64A;&#x629; &#x62A;&#x639;&#x62F;&#x64A;&#x644; &#x646;&#x638;&#x627;&#x645;&#x643; &#x627;&#x644;&#x63A;&#x630;&#x627;&#x626;&#x64A; &#x644;&#x62C;&#x639;&#x644;&#x647; &#x645;&#x645;&#x62A;&#x639;&#x64B;&#x627; &#x648;&#x645;&#x633;&#x62A;&#x62F;&#x627;&#x645;&#x64B;&#x627; &#x648;&#x641;&#x639;&#x627;&#x644;&#x64B;&#x627; &#x62D;&#x648;&#x644; &#x627;&#x644;&#x623;&#x647;&#x62F;&#x627;&#x641; &#x627;&#x644;&#x645;&#x62A;&#x63A;&#x64A;&#x631;&#x629;.
+                                </p>
+                            </div>
+                        </li>
+
+
+                </ul>
+
+            </div>
+            <a href="images/a989e0c2-d0d1-44ef-9130-cb175385819btrim.AF4638F3-AC15-4EE4-BD71-DB89D7A1ABB8.qt" class="rounded-3 overflow-hidden  w-100 glightbox watch-div">
+                    <div class="text">
+                        <i class="fa fa-play icon"></i>
+                        <p>شاهد الان</p>
+                    </div>
+                    <img  onerror="this.src = 'images/home/mobile/watch.png'" src="images/66e34371-d4c0-48a1-a8af-2ac93d287dcdSERVICES.jpg" class="h-100 w-100 " style="object-fit: cover;" alt="">
+                </a>
+        </div>
+
+
+    </div>
+
+<!-- end -->
+<div id="about" class="page">
+    <!-- about section -->
+        <!-- start -->
+        <section dir="rtl" class="about desktop">
+            <div class="container">
+                <div class="dividor">
+                    <div class="swiper swiper-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="about-content">
+                                    <h2>عن اسلام كامل</h2>
+                                    <ul>
+                                        <li>تنافس في  <span>11 مسابقة لياقة بدنية للرجال </span></li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x627;&#x648;&#x644; </span> &#x644;&#x628;&#x637;&#x648;&#x644;&#x629; &#x627;&#x644;&#x62C;&#x645;&#x647;&#x648;&#x631;&#x64A;&#x629; &#x627;&#x644;&#x645;&#x635;&#x631;&#x64A;&#x629; &#x644;&#x643;&#x645;&#x627;&#x644; &#x627;&#x644;&#x627;&#x62C;&#x633;&#x627;&#x645; 2016</li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x644;&#x62B; </span> &#x641;&#x64A; Ifbb Elite Titanium Classic 2016 </li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x627;&#x648;&#x644; </span>  &#x644;&#x628;&#x637;&#x648;&#x644;&#x629; &#x627;&#x644;&#x62C;&#x645;&#x647;&#x648;&#x631;&#x64A;&#x629; &#x627;&#x644;&#x645;&#x635;&#x631;&#x64A;&#x629; &#x644;&#x643;&#x645;&#x627;&#x644; &#x627;&#x644;&#x627;&#x62C;&#x633;&#x627;&#x645;2017</li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x627;&#x648;&#x644; </span> &#x641;&#x64A; Ifbb Elite Mr.Fit Classic 2017 </li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x646;&#x64A; </span> &#x641;&#x64A; Ifbb Elite Titanium Classic 2018 </li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x623;&#x648;&#x644; </span> &#x641;&#x64A; Ifbb Elite Alain Legend 2018 </li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x644;&#x62B; </span> &#x641;&#x64A;  Ifbb Elite Abu Dhabi 2018  </li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x644;&#x62B; </span>  &#x641;&#x64A; Ifbb Pro Kuwait Classic 2018 </li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x646;&#x64A;  </span> &#x644;&#x644;&#x633;&#x64A;&#x62F; &#x623;&#x648;&#x644;&#x645;&#x628;&#x64A;&#x627; &#x627;&#x644;&#x635;&#x64A;&#x646; 2019</li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x646;&#x64A; </span> &#x645;&#x633;&#x62A;&#x631; &#x623;&#x648;&#x644;&#x645;&#x628;&#x64A;&#x627; &#x645;&#x635;&#x631; 2021</li>
+                                            <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x623;&#x648;&#x644; </span> IFBB Dubai Pro 2022</li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-content spoonsor">
+                                    <h2>الشركات الراعية</h2>
+                                    <ul>
+                                        <li>
+                                            <img src="images/home/lion.png" alt="Ko-Squad">
+                                            <p>
+                                                <span>Ko-Squad</span> هي الراعي الرئيسي ، لقد بدأنا عقدنا في عام 2017 حتى الآن ما زلنا نعمل معًا.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/home/wing.png" alt="Braga">
+                                            <p>
+                                                <Span>Braga</Span> هي أحد رعاة الملابس الرياضية ، وقد بدأنا عقدنا في عام 2020 حتى الآن لا نزال نعمل معًا. كانت أول نموذج للياقة البدنية للذكور والآن أنا النموذج الرئيسي للشركة.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/home/ko.png" alt="Ko-Gear">
+                                            <p>
+                                                <span>Ko-Gear</span> هي إحدى رعاة الملابس الرياضية ، وقد بدأنا عقدنا في عام 2021 حتى الآن ما زلنا نعمل معًا.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="socialito ">
+                                        <li>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <span>ESLAM KAMEL</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <span>TEAM EK</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                            <span>WHATSAPP</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-content pasto">
+                                    <h2>
+                                        &#x627;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628; &#x639;&#x628;&#x631; &#x627;&#x644;&#x625;&#x646;&#x62A;&#x631;&#x646;&#x62A;                                         &#x645;&#x639;&#x64A; &#x641;&#x64A; &#x627;&#x644;&#x62B;&#x644;&#x627;&#x62B;&#xD;&#xA; &#x633;&#x646;&#x648;&#x627;&#x62A; &#x627;&#x644;&#x645;&#x627;&#x636;&#x64A;&#x629;
+                                    </h2>
+                                    <ul>
+                                        <li>
+                                            <h4>
+                                                <span>4000 </span>
+                                                عميل
+                                            </h4>
+                                            <p>
+                                                لقد عملت مع أكثر من 4000 عميل في 53 دولة مختلفة حول العالم.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>4000</span>
+                                                هدف
+                                            </h4>
+                                            <p>
+                                                البعض حقق هدفهم ، والبعض الآخر لم يحققه ، لأننا لم ننتهي بعد لكننا سنفعل ذلك معًا.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="about-mobile mobile">
+            <ul>
+                <li>
+                    <div class="about-content">
+                        <h2>عن اسلام كامل</h2>
+                        <ul>
+                            <li>تنافس في  <span>11 مسابقة لياقة بدنية للرجال </span></li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x627;&#x648;&#x644; </span> &#x644;&#x628;&#x637;&#x648;&#x644;&#x629; &#x627;&#x644;&#x62C;&#x645;&#x647;&#x648;&#x631;&#x64A;&#x629; &#x627;&#x644;&#x645;&#x635;&#x631;&#x64A;&#x629; &#x644;&#x643;&#x645;&#x627;&#x644; &#x627;&#x644;&#x627;&#x62C;&#x633;&#x627;&#x645; 2016</li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x644;&#x62B; </span> &#x641;&#x64A; Ifbb Elite Titanium Classic 2016 </li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x627;&#x648;&#x644; </span>  &#x644;&#x628;&#x637;&#x648;&#x644;&#x629; &#x627;&#x644;&#x62C;&#x645;&#x647;&#x648;&#x631;&#x64A;&#x629; &#x627;&#x644;&#x645;&#x635;&#x631;&#x64A;&#x629; &#x644;&#x643;&#x645;&#x627;&#x644; &#x627;&#x644;&#x627;&#x62C;&#x633;&#x627;&#x645;2017</li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x627;&#x648;&#x644; </span> &#x641;&#x64A; Ifbb Elite Mr.Fit Classic 2017 </li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x646;&#x64A; </span> &#x641;&#x64A; Ifbb Elite Titanium Classic 2018 </li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x623;&#x648;&#x644; </span> &#x641;&#x64A; Ifbb Elite Alain Legend 2018 </li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x644;&#x62B; </span> &#x641;&#x64A;  Ifbb Elite Abu Dhabi 2018  </li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x644;&#x62B; </span>  &#x641;&#x64A; Ifbb Pro Kuwait Classic 2018 </li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x646;&#x64A;  </span> &#x644;&#x644;&#x633;&#x64A;&#x62F; &#x623;&#x648;&#x644;&#x645;&#x628;&#x64A;&#x627; &#x627;&#x644;&#x635;&#x64A;&#x646; 2019</li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x62B;&#x627;&#x646;&#x64A; </span> &#x645;&#x633;&#x62A;&#x631; &#x623;&#x648;&#x644;&#x645;&#x628;&#x64A;&#x627; &#x645;&#x635;&#x631; 2021</li>
+                                <li><span>&#x627;&#x644;&#x645;&#x631;&#x643;&#x632; &#x627;&#x644;&#x623;&#x648;&#x644; </span> IFBB Dubai Pro 2022</li>
+                            <li><span>المركز الاول </span> لبطولة الجمهورية المصرية لكمال الاجسام 2016</li>
+                            <li><span>المركز الثالث </span> في - Ifbb Elite Titanium Classic 2016</li>
+                            <li><span>المركز الاول</span> لبطولة الجمهورية المصرية لكمال الاجسام2017</li>
+                            <li><span>المركز الاول </span> في - Ifbb Elite Mr.Fit Classic 2017</li>
+                            <li><span>المركز الثاني  </span> في - Ifbb Elite Titanium Classic 2018</li>
+                            <li><span>المركز الاول </span> في - Ifbb Elite Alain Legend 2018 </li>
+                            <li><span>المركز الثالث </span> في - Ifbb Elite Abu Dhabi 2018</li>
+                            <li><span>المركز الثالث </span> في - Ifbb Pro Kuwait Classic 2018</li>
+                            <li><span>المركز الثاني  </span> للسيد أولمبيا الصين 2019</li>
+                            <li><span>المركز الثاني </span> مستر أولمبيا مصر 2021</li>
+                            <li><span>المركز الأول  </span> في - IFBB Dubai Pro 2022</li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="about-content spoonsor px-3 ">
+                        <h2>الشركات الراعية</h2>
+                        <ul>
+                            <li>
+                                <img src="images/home/lion.png" alt="Ko-Squad">
+                                <p>
+                                    <span>Ko-Squad</span> هي الراعي الرئيسي ، لقد بدأنا عقدنا في عام 2017 حتى الآن ما زلنا نعمل معًا.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/home/wing.png" alt="Braga">
+                                <p>
+                                    <Span>Braga</Span> هي أحد رعاة الملابس الرياضية ، وقد بدأنا عقدنا في عام 2020 حتى الآن لا نزال نعمل معًا. كانت أول نموذج للياقة البدنية للذكور والآن أنا النموذج الرئيسي للشركة.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/home/ko.png" alt="Ko-Gear">
+                                <p>
+                                    <span>Ko-Gear</span> هي إحدى رعاة الملابس الرياضية ، وقد بدأنا عقدنا في عام 2021 حتى الآن ما زلنا نعمل معًا.
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="socialito p-0 justify-content-center d-flex flex-wrap text-nowrap">
+                            <li class="mb-0 mx-1">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>ESLAM KAMEL</span>
+                            </li>
+                            <li class="mb-0 mx-1">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>TEAM EK</span>
+                            </li>
+                            <li class="mb-0 mx-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>WHATSAPP</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="about-content pasto">
+                        <h2>
+                           &#x627;&#x644;&#x62A;&#x62F;&#x631;&#x64A;&#x628; &#x639;&#x628;&#x631; &#x627;&#x644;&#x625;&#x646;&#x62A;&#x631;&#x646;&#x62A;                                         &#x645;&#x639;&#x64A; &#x641;&#x64A; &#x627;&#x644;&#x62B;&#x644;&#x627;&#x62B;&#xD;&#xA; &#x633;&#x646;&#x648;&#x627;&#x62A; &#x627;&#x644;&#x645;&#x627;&#x636;&#x64A;&#x629;
+                        </h2>
+                        <ul>
+                            <li>
+                                <h4>
+                                    <span>4000 </span>
+                                    عميل
+                                </h4>
+                                <p>
+                                    لقد عملت مع أكثر من 4000 عميل في 53 دولة مختلفة حول العالم.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>
+                                    <span>4000</span>
+                                    هدف
+                                </h4>
+                                <p>
+                                    البعض حقق هدفهم ، والبعض الآخر لم يحققه ، لأننا لم ننتهي بعد لكننا سنفعل ذلك معًا.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end -->
+
+    <!-- additive-1 section -->
+    <!-- start -->
+    <section class="additive-1 desktop">
+        <div class="container">
+                <h2>
+                    يتم الرد على جميع
+                    أسئلتك من قبلي .
+                </h2>
+                <p>للوصول إلى هدفك يتكون من عدة عوامل مهمة ، ولكن المتابعة هي أولويتنا.</p>
+                <button><a href="EslamKamel/GetStarted.html">ابدأ الان</a></button>
+        </div>
+    </section>
+    <!-- end -->
+</div>
+
+<div id="transform" class="page">
+    <!-- transformation section -->
+    <!-- start -->
+    <section class="transformation desktop">
+        <div class="container">
+
+                <h2>التحولات الجسمانية.</h2>
+                <ul>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/735164e9-ba28-47e9-9cb4-9ba43dbfe3a51B4BC253-0124-421C-B1AE-87FD821C56F0.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/0ad02f25-14f8-4a9a-a4d6-121887f4223921E744D2-28BA-4879-9489-A0F6FA2E7C25.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/8313004f-6def-4af4-bdc6-0b87a5cb6dc7A838472C-5A35-40FF-804C-88A0E4D3A4CD.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/510e6a7c-ac61-4e86-bf72-0e192665364853C9CFD1-D23C-4676-AAA8-37B1B0D7B057.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/e7360ea1-2f12-4fb6-80a7-cb0677983b3410B94476-6831-4DEF-9710-B13E73A162FB.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/1cc55cb7-0df5-4e61-b2b6-cec7f68fbfe047E6CF44-4655-4A40-AAE5-28DAAF8A2497.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/75590d91-4257-4bdd-9dd1-febd9adf71da8209C3FB-6063-46E7-B088-D6404EC54D93.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/0699119a-12c0-4f5a-8013-a9582ddb936cFF2FC3FC-F326-4141-A6D6-1CFB43EE57B7.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/e8c39899-3245-4f14-88d0-d872242b21c21CBC172F-86EC-4D66-8896-387C3D6E7BE6.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/fcc934e5-51b9-4cfd-af06-6622a087e48e8322B2A1-E632-4194-8861-9018D2F986BA.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/2ec8c8e1-cefc-4640-86fa-0b6b12e9769d7B5F0652-9834-4639-8983-C982E4E091A6.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/2881c39d-5ec9-4f00-90ba-95f46402d681E8866009-578F-4F79-A7C3-A26D4033C91F.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/d95fdf90-49a1-4780-9a4b-0a4050786c6e0E080CFC-348C-425C-8039-D674ED56F923.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/249a668d-5850-4dc7-b8ae-61c06509a440A7366997-83D0-4A56-BD31-50BACBD99FE2.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/22f77c75-6b49-4a88-9e55-b0ce5276a60dCC67565B-3A62-4C31-B0A5-EEF7E05A6845.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/fab9d21d-5a85-41b7-bccb-490b56badf15D123C72D-84D3-4E53-828B-D861F4F82E2E.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/e0586892-f767-4703-9d68-a9a0bfb5d6a53FA8D3CC-C97A-4945-9F4B-DBBFB0F23D9D.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/027f53ec-ebd0-4a8a-b8c0-ea4dbc8723b4AE1DDB29-9145-4CE5-8F25-E2F0C01DD100.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/0b15105a-7647-4161-8d2b-8d2102e95599F20198B5-2F7A-4DBF-BB5E-33F18DF40956.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/eaab55bb-0512-4989-9e6a-2e4458b3a0495A4BB2AD-A1BF-4C32-8268-F09D03C5F405.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/e207fb73-fc89-4860-a5e4-51773c0a1b8eB9225934-03BC-4F54-8B91-5CCA13CEBC18.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/32607e33-1038-4c8d-9c10-9d82781ef4e19C6F831E-76C2-4A3F-B560-1AB34D914E4C.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/96986670-e824-4632-b39e-f136c6141c25DC5389C6-F9C7-459C-8D34-C59A6B8FE72F.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/59d6adea-cc6f-49f2-8210-5b85d1a5118471E2B26A-FFD9-4584-9E71-AE7C315B8F06.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/e3981c0a-281f-433f-a593-d6550fd7ba85DDDB2771-46B7-41C5-B387-B02A1D098CCC.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/772df704-88c9-4e3e-b925-e63c3b8f99cb36154838-53CD-49C8-9394-B8C7B311F7DB.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/d5b8b7cf-28f4-4983-a395-858813219a1cAEF4AE3D-96BA-44BD-B451-90A591CFCF82.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/7a91e6a8-b12a-47af-97de-2e4a0de5bb5f99A7E961-6EAA-4651-9A13-86A000983959.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/d3913c4c-dd9f-483e-91f5-04a836cc7271CA836DA9-0FCA-487B-8B18-C423FD7C7853.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/c58a6cb1-6c59-4143-98fe-ebc9b0764ac4DC019A4E-AC32-4205-8F2F-FDA623BAFAA8.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/9bf42a94-c6bd-46c1-9223-a936fc33e14f1260E944-D012-4D00-A7EB-2C993F9F09B2.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/af7d1c78-d87f-44dd-a84c-b119cbafccc3F43EBCAC-E87E-4A4F-B3C0-9933AC090AC3.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/f59c9f56-6a44-4c47-a2f7-eee7e51f5274300F8A42-A56B-4732-A86E-9FDF6914E248.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/3100bf61-bb8f-495f-b57e-78878ec8a4d08D7DC841-FED6-48B1-92F2-30AD85EB39E5.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/dfe48cd8-ffb0-4b6c-a73a-1c05a10b28de17FF9461-4BFE-446C-9BA8-5E509CB8FF7B.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/65c57ddc-8a81-40f1-b8da-0684d1a38cbcEEE21AF8-5B1E-4344-8785-46EEF8386C36.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/21599cbb-c205-440a-aaca-7c61220d252aBD1EDA36-F917-449F-B9BD-32FEA73AEBD6.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/26c36f4a-6616-415f-93af-bf3201f231fdB97DC220-E45F-4DA4-BF1F-3F72CD6B25A9.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/d2f00322-13b2-41d0-a9ac-8e551b99722233FA0D2B-3CE9-4295-B16D-F89BA73EC9EC.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/1a2a54e6-e08d-49c9-a050-99727902cd47A6FB551C-9252-46A4-9414-AE3CCB154259.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/bbd6687e-2d6f-4224-b78d-8ce42e7b55eb484D6324-3EE3-446D-9CC6-ACA14EE30700.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/38a422f7-8d94-4e5e-929c-d0436afb97ffC19B7778-F0A3-48F5-8231-D251009CCCAD.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/b2c8a956-d3fa-41f9-9ebe-c13bd76d75bfA3B502E0-56D9-4A1D-B6E4-AF62191194F8.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/3c265acb-a7e2-4590-9764-c3dd2903b77f6D3B6CBF-1030-4B0A-AFAA-F2E868F8D69A.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/0cd97924-53d2-4351-9c33-1fec83679eb40EDA173E-53DC-4ABE-8E18-60538D367EF6.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/f3dac4ac-bda4-4215-b96c-1ea216fe68b0E0AEDE7F-6298-4FD9-9CE9-1C38CC7E9D79.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/d9148acd-539d-409f-aa96-31b9ce11e18d30588242-1C05-44B3-A57B-5B36698EA080.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/77fbc92d-a289-4f5c-8de9-caa5136e4857056FF940-60B9-4F14-A477-C3EAFB86A307.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/fc51b845-3f96-40e5-9a98-ba624b3c5d862BB6B42B-DB54-417A-B4ED-C859B389A049.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/6b7e067c-9af8-4f1c-9e00-b7de06d84d36FC62D9A9-5D6D-4AA8-BFFB-3F2886162268.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="after h-100">
+                                    <img src="images/882caac2-09e4-4659-8500-77608979cb0934991B0B-33A3-4709-9D9F-E3FA1439C752.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="before h-100">
+                                    <img src="images/2bd696ab-d48f-4fba-8a70-f78965d186a9AFA0760C-6904-4641-8472-84E210BDEFDB.jpg">
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                <div class="carriar">
+
+                    <a href="images/a933261b-2771-4a7c-9204-91d4241211a8trim.22FB58C0-639F-4FF5-98E0-8A645E5626D1.qt" class=" glightbox">
+                        <button>
+                            &#x634;&#x627;&#x647;&#x62F; &#x627;&#x644;&#x622;&#x646; <i class="fa-solid fa-play"></i>
+                        </button>
+                    </a>
+                   
+                    <a href="https://www.instagram.com/team.e_k/" target="_blank">
+                        <button>
+                            &#x639;&#x631;&#x636; &#x627;&#x644;&#x645;&#x632;&#x64A;&#x62F;
+
+                        </button>
+                    </a>
+                </div>
+        </div>
+    </section>
+        <div class="transformation-mobile mobile">
+            <div class="container">
+                <h2 class="w-75 mx-auto">
+                    &#x627;&#x644;&#x62A;&#x62D;&#x648;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x62C;&#x633;&#x645;&#x627;&#x646;&#x64A;&#x629; &#x644;&#x639;&#x645;&#x644;&#x627;&#x626;&#x64A;
+                </h2>
+                <div class="transformation-content" data-before-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" data-after-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;">
+                    <div class="swiper swiper-3">
+                        <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/735164e9-ba28-47e9-9cb4-9ba43dbfe3a51B4BC253-0124-421C-B1AE-87FD821C56F0.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/0ad02f25-14f8-4a9a-a4d6-121887f4223921E744D2-28BA-4879-9489-A0F6FA2E7C25.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/8313004f-6def-4af4-bdc6-0b87a5cb6dc7A838472C-5A35-40FF-804C-88A0E4D3A4CD.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/510e6a7c-ac61-4e86-bf72-0e192665364853C9CFD1-D23C-4676-AAA8-37B1B0D7B057.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/e7360ea1-2f12-4fb6-80a7-cb0677983b3410B94476-6831-4DEF-9710-B13E73A162FB.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/1cc55cb7-0df5-4e61-b2b6-cec7f68fbfe047E6CF44-4655-4A40-AAE5-28DAAF8A2497.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/75590d91-4257-4bdd-9dd1-febd9adf71da8209C3FB-6063-46E7-B088-D6404EC54D93.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/0699119a-12c0-4f5a-8013-a9582ddb936cFF2FC3FC-F326-4141-A6D6-1CFB43EE57B7.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/e8c39899-3245-4f14-88d0-d872242b21c21CBC172F-86EC-4D66-8896-387C3D6E7BE6.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/fcc934e5-51b9-4cfd-af06-6622a087e48e8322B2A1-E632-4194-8861-9018D2F986BA.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/2ec8c8e1-cefc-4640-86fa-0b6b12e9769d7B5F0652-9834-4639-8983-C982E4E091A6.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/2881c39d-5ec9-4f00-90ba-95f46402d681E8866009-578F-4F79-A7C3-A26D4033C91F.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/d95fdf90-49a1-4780-9a4b-0a4050786c6e0E080CFC-348C-425C-8039-D674ED56F923.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/249a668d-5850-4dc7-b8ae-61c06509a440A7366997-83D0-4A56-BD31-50BACBD99FE2.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/22f77c75-6b49-4a88-9e55-b0ce5276a60dCC67565B-3A62-4C31-B0A5-EEF7E05A6845.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/fab9d21d-5a85-41b7-bccb-490b56badf15D123C72D-84D3-4E53-828B-D861F4F82E2E.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/e0586892-f767-4703-9d68-a9a0bfb5d6a53FA8D3CC-C97A-4945-9F4B-DBBFB0F23D9D.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/027f53ec-ebd0-4a8a-b8c0-ea4dbc8723b4AE1DDB29-9145-4CE5-8F25-E2F0C01DD100.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/0b15105a-7647-4161-8d2b-8d2102e95599F20198B5-2F7A-4DBF-BB5E-33F18DF40956.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/eaab55bb-0512-4989-9e6a-2e4458b3a0495A4BB2AD-A1BF-4C32-8268-F09D03C5F405.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/e207fb73-fc89-4860-a5e4-51773c0a1b8eB9225934-03BC-4F54-8B91-5CCA13CEBC18.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/32607e33-1038-4c8d-9c10-9d82781ef4e19C6F831E-76C2-4A3F-B560-1AB34D914E4C.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/96986670-e824-4632-b39e-f136c6141c25DC5389C6-F9C7-459C-8D34-C59A6B8FE72F.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/59d6adea-cc6f-49f2-8210-5b85d1a5118471E2B26A-FFD9-4584-9E71-AE7C315B8F06.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/e3981c0a-281f-433f-a593-d6550fd7ba85DDDB2771-46B7-41C5-B387-B02A1D098CCC.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/772df704-88c9-4e3e-b925-e63c3b8f99cb36154838-53CD-49C8-9394-B8C7B311F7DB.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/d5b8b7cf-28f4-4983-a395-858813219a1cAEF4AE3D-96BA-44BD-B451-90A591CFCF82.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/7a91e6a8-b12a-47af-97de-2e4a0de5bb5f99A7E961-6EAA-4651-9A13-86A000983959.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/d3913c4c-dd9f-483e-91f5-04a836cc7271CA836DA9-0FCA-487B-8B18-C423FD7C7853.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/c58a6cb1-6c59-4143-98fe-ebc9b0764ac4DC019A4E-AC32-4205-8F2F-FDA623BAFAA8.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/9bf42a94-c6bd-46c1-9223-a936fc33e14f1260E944-D012-4D00-A7EB-2C993F9F09B2.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/af7d1c78-d87f-44dd-a84c-b119cbafccc3F43EBCAC-E87E-4A4F-B3C0-9933AC090AC3.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/f59c9f56-6a44-4c47-a2f7-eee7e51f5274300F8A42-A56B-4732-A86E-9FDF6914E248.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/3100bf61-bb8f-495f-b57e-78878ec8a4d08D7DC841-FED6-48B1-92F2-30AD85EB39E5.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/dfe48cd8-ffb0-4b6c-a73a-1c05a10b28de17FF9461-4BFE-446C-9BA8-5E509CB8FF7B.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/65c57ddc-8a81-40f1-b8da-0684d1a38cbcEEE21AF8-5B1E-4344-8785-46EEF8386C36.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/21599cbb-c205-440a-aaca-7c61220d252aBD1EDA36-F917-449F-B9BD-32FEA73AEBD6.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/26c36f4a-6616-415f-93af-bf3201f231fdB97DC220-E45F-4DA4-BF1F-3F72CD6B25A9.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/d2f00322-13b2-41d0-a9ac-8e551b99722233FA0D2B-3CE9-4295-B16D-F89BA73EC9EC.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/1a2a54e6-e08d-49c9-a050-99727902cd47A6FB551C-9252-46A4-9414-AE3CCB154259.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/bbd6687e-2d6f-4224-b78d-8ce42e7b55eb484D6324-3EE3-446D-9CC6-ACA14EE30700.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/38a422f7-8d94-4e5e-929c-d0436afb97ffC19B7778-F0A3-48F5-8231-D251009CCCAD.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/b2c8a956-d3fa-41f9-9ebe-c13bd76d75bfA3B502E0-56D9-4A1D-B6E4-AF62191194F8.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/3c265acb-a7e2-4590-9764-c3dd2903b77f6D3B6CBF-1030-4B0A-AFAA-F2E868F8D69A.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/0cd97924-53d2-4351-9c33-1fec83679eb40EDA173E-53DC-4ABE-8E18-60538D367EF6.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/f3dac4ac-bda4-4215-b96c-1ea216fe68b0E0AEDE7F-6298-4FD9-9CE9-1C38CC7E9D79.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/d9148acd-539d-409f-aa96-31b9ce11e18d30588242-1C05-44B3-A57B-5B36698EA080.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/77fbc92d-a289-4f5c-8de9-caa5136e4857056FF940-60B9-4F14-A477-C3EAFB86A307.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/fc51b845-3f96-40e5-9a98-ba624b3c5d862BB6B42B-DB54-417A-B4ED-C859B389A049.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/6b7e067c-9af8-4f1c-9e00-b7de06d84d36FC62D9A9-5D6D-4AA8-BFFB-3F2886162268.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="&#x642;&#x628;&#x640;&#x640;&#x640;&#x644;" class="after">
+                                                <img style="width:100%;height:auto" src="images/882caac2-09e4-4659-8500-77608979cb0934991B0B-33A3-4709-9D9F-E3FA1439C752.jpg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-text="&#x628;&#x640;&#x640;&#x639;&#x62F;" class="before">
+                                                <img style="width:100%;height:auto" src="images/2bd696ab-d48f-4fba-8a70-f78965d186a9AFA0760C-6904-4641-8472-84E210BDEFDB.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="https://www.instagram.com/team.e_k/" target="_blank"
+                       class="btn btn-dark w-100 mb-4 px-4 py-2 " style="min-width: 150px">
+                        &#x639;&#x631;&#x636; &#x627;&#x644;&#x645;&#x632;&#x64A;&#x62F;
+                    </a>
+                    <div>
+                        <a href="images/a933261b-2771-4a7c-9204-91d4241211a8trim.22FB58C0-639F-4FF5-98E0-8A645E5626D1.qt" class="rounded-3 overflow-hidden w-100 glightbox watch-div">
+                            <div class="text">
+                                <i class="fa fa-play icon"></i>
+                                <p>
+                                    &#x634;&#x627;&#x647;&#x62F; &#x627;&#x644;&#x622;&#x646;
+                                </p>
+                            </div>
+                            <img  onerror="this.src = 'images/home/mobile/watch.png'" src="images/e78baa9f-782a-47e1-9d84-7103a3ce5143TRANSFORMATIONS.jpg" class="h-100 w-100 " style="object-fit: cover;" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    <!-- end -->
+    <!-- additive-2 section -->
+    <!-- start -->
+        <section class="additive-2 desktop">
+            <div class="container">
+                <h2>
+                    على استعداد لاتخاذ الخطوة التالية؟
+                    على استعداد لتغيير حياتك؟
+                </h2>
+                <div>
+                    <span>ابدأ رحلتك الآن</span>
+                    <button><a href="EslamKamel/GetStarted.html">ابدأ الان</a></button>
+                </div>
+            </div>
+        </section>
+        <div class="additive-2-mobile mobile">
+            <div class="logo-bg">
+                <img src="images/flags/logo.png" />
+            </div>
+            <div class="dark-bg">
+            </div>
+            <div class="container ">
+                <h2 class="text-center text-md-start">
+                    مستعد لاتخاذ
+                    الخطوة التالية؟
+                    هل أنت مستعد لتغيير حياتك
+                </h2>
+                <div class="mt-5">
+                    <button><a href="EslamKamel/GetStarted.html">ابدأ الان</a></button>
+                </div>
+            </div>
+        </div>
+
+
+
+</div>
+
+<footer class="bg-black py-3" style="z-index: 999; position: relative; bottom: 0; width: 100%;">
+    <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-md-between">
+            <div class="col-md-4 col-12 text-center text-md-start">
+                <h4 class="f-poppins text-white fw-bolder">
+
+                    Eslam kamel
+                </h4>
+
+
+            </div>
+
+
+            <div class="col-md-4 col-12 mb-2 mb-md-0 text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-3 fs-5 text-white">
+                    <a target="_blank" class="text-white" href="https://www.facebook.com/eslam.kamel.944023?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" class="text-white" href="https://www.tiktok.com/@eslam_kamelek?_t=8amdNJx5KLu&amp;_r=1"><i class="fab fa-tiktok"></i></a>
+                    <a target="_blank" class="text-white" href="https://instagram.com/eslamkamel.ek?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" class="text-white" href="https://wa.me/2001144178874"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12 text-white text-center text-md-end">
+                    <span>
+                        2023 &copy; كل الحقوق محفوظة
+                    </span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ??  Modal For POPUP -->
+<div class="modal fade " id="PopupStart" tabindex="-1" role="dialog" aria-labelledby="PopupStartLabel"
+     aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div style="background-color: #171717" class="modal-content bg-opacity-100 shadow rounded-2 text-white">
+                <div class="modal-header text-center p-4 border-0">
+                    <h4 class="modal-title mb-0 fw-bold" id="PopupStartLabel">
+                        اشترك معنا لتصلك عروضنا أول بأول
+                    </h4>
+
+                </div>
+                <div class="modal-body ">
+                    <div class="form-group mb-3">
+                        <!-- <label class="control-label text-white mb-2">Name</label> -->
+                        <input required maxlength="200" type="text" id="Name" class="form-control"
+                               placeholder="إسمك">
+                        <small id="NameError" style="display:none" class="text-danger  error">
+                            هذا الحقل ضروري
+                        </small>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <!-- <label class="control-label text-white mb-2">Age</label> -->
+                        <input required maxlength="200" type="number" id="Age" class="form-control"
+                               placeholder="عمرك">
+                        <small id="AgeError" style="display:none" class="text-danger  error">هذا الحقل ضروري</small>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <!-- <label class="control-label text-white mb-2">Mobile phone</label> -->
+                        <input required maxlength="200" type="text" id="Phone" class="form-control"
+                               placeholder="رقم الموبايل">
+                        <small id="PhoneError" style="display:none" class="text-danger  error">
+                           يجب إدخال رقم تليفون صحيح
+                        </small>
+
+                    </div>
+                </div>
+                <div class="modal-footer text-center border-0">
+                    <div class="row row-cols-2 justify-content-center w-100">
+                        <div class="col-auto">
+                            <button id="closeModal" type="button" class="btn btn-light ">
+                                إغلاق
+                            </button>
+                        </div>
+
+                        <div class="col-auto">
+                            <button id="modalSubBtn" type="button" onclick="Add()" class="btn btn-warning  text-white">
+                                اشترك الآن
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- jquery js -->
+<script src="lib/jquery/jquery-3.6.3.min.js"></script>
+
+<!-- bootstrap js -->
+<script src="lib/boststrap/bootstrap.bundle.min.js"></script>
+
+<!-- swiper js -->
+<script src="lib/swiper/swiper-bundle.min.js"></script>
+<!-- navbar script -->
+<script src="js/nav.js"></script>
+<script>
+    var myModal;
+    $(document).ready(function () {
+        const lastPopup = sessionStorage.getItem('last-pop');
+        if (!JSON.parse(localStorage.getItem('subscribed')) && (!lastPopup || ((new Date().valueOf()) - (new Date(JSON.parse(lastPopup)).valueOf())) > 1000)) {
+            myModal = new bootstrap.Modal(document.getElementById('PopupStart'), {
+                keyboard: true,
+                backdrop: true,
+            });
+
+            $('#closeModal').on('click', () => {
+                myModal.hide();
+            })
+
+            setTimeout(() => {
+                myModal.show();
+
+                sessionStorage.setItem('last-pop', new Date().valueOf())
+            }, 100);
+        }
+
+
+    })
+
+
+    function Add() {
+
+        let Name = $('#Name').val();
+        let Age = $('#Age').val();
+        let Phone = $('#Phone').val();
+        let formData = new FormData();
+        $('.error').hide();
+        let isValid = true;
+        if (Name == "" || Name == null) {
+            $('#NameError').show();
+            isValid = false;
+        }
+        if (Phone == "" || Phone == null || !phonePattern.test(Phone)) {
+            $('#PhoneError').show();
+            isValid = false;
+
+        }
+        if (isValid) {
+            $('#add').prop('disabled', true);
+            $('#modalSubBtn').prop('disabled', true);
+            $('#modalSubBtn').html('<span class="fa fa-spinner fa-spin"></span>');
+
+            formData.append("Name", Name)
+            formData.append("Age", Age)
+            formData.append("Phone", Phone);
+            formData.append("Type", "GLOBAL");
+
+
+            $.ajax({
+                url: "/Admin/AddSubscriber",
+                type: "POST",
+                data: formData,
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                success: function (result) {
+                    if (result == true) {
+                        localStorage.setItem('subscribed', true);
+                        myModal.hide();
+                    }
+
+                },
+            });
+        }
+
+    }
+</script>
+<script src="lib/HTML5-Video-Lightbox-VideoPopup/js/videopopup.js"></script>
+<script>
+    $(function () {
+        $("video[autoplay]").each(function () { this?.play(); });
+        const lightbox = GLightbox({
+            touchNavigation: false,
+            loop: false,
+            autoplayVideos: true
+        });
+    });
+</script>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 80,
+        speed: 700,
+        loop: true,
+        grabCursor: true,
+        effect: "fade",
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    var swiper2 = new Swiper(".swiper-2", {
+        spaceBetween: 80,
+        speed: 1000,
+
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination-2",
+            clickable: true,
+        },
+    });
+
+    var swiper3 = new Swiper(".swiper-3", {
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+
+
+
+    <div class="social-float">
+        <div class="social-float-button">
+            <i class="fas fa-message"></i>
+        </div>
+        <div class="social-float-icons">
+            <a target="_blank" href="https://www.facebook.com/eslam.kamel.944023?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@eslam_kamelek?_t=8amdNJx5KLu&amp;_r=1"><i class="fab fa-tiktok"></i></a>
+            <a target="_blank" href="https://instagram.com/eslamkamel.ek?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://wa.me/2001144178874"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <script>
+        $('.navbar-nav .nav-item').click(function () {
+            $('.navbar-collapse').removeClass('show')
+        });
+
+        $('.social-float').on('click', function () {
+            $('.social-float').toggleClass('open')
+        })
+
+        $(document).on('click', function (event) {
+            if (!$(event.target).is(".social-float") && !$(event.target).closest(".social-float").length) {
+
+                $('.social-float').removeClass('open')
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        const phonePattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+        $(document).ready(function () {
+
+           
+        });
+     
+
+
+        function ipLookUp() {
+            $('#spinner').show();
+            var country = "";
+            // Set endpoint and your access key
+            const url = 'https://freeipapi.com/api/json';
+            $.ajax({
+                url: url,
+                method: 'GET',
+                success: function (data) {
+                    if (data) {
+                        country = data.countryName;
+                        $('#spinner').hide();
+                        if (country.includes("Egypt")) {
+                            $('.usdView').hide();
+
+                        } else {
+                            $('.egpView').hide();
+                        }
+                    }
+                },
+                error: function (error) {
+                    $('#spinner').hide();
+                    $('.usdView').hide();
+                }
+            });
+        }
+    </script>
+</body>
+
+
+<!-- Mirrored from www.eslamkamel.co/?culture=ar-EG by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 15:18:35 GMT -->
+</html>

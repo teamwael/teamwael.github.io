@@ -1,0 +1,241 @@
+/** hero section style **/ /*ABOUT*/
+/************************/
+.hero{
+    background-image: url("../../../images/get-started/desktop/get-started-bg.png");
+    background-position: top center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background-color: #0d0c0e;
+    position: relative;
+    background-size: cover;
+
+}
+
+.hero .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.336);
+    background: -moz-linear-gradient(180deg, rgba(11,114,147,0) 0%, rgba(0,0,0,0.7511204310825893) 25%);
+    background: -webkit-linear-gradient(180deg, rgba(11,114,147,0) 0%, rgba(0,0,0,0.7511204310825893) 25%);
+    background: linear-gradient(180deg, rgba(11,114,147,0) 0%, rgba(0,0,0,0.7511204310825893) 25%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b7293",endColorstr="#000000",GradientType=1); 
+
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(0deg, #0d0c0e 22%, transparent 45%);
+}
+
+
+
+.hero h2{
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 190px;
+    position: relative;
+}
+
+.hero .container .dividor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  flex-start;
+    position: relative;
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+
+    .hero .container .dividor .left-side, .hero .container .dividor .right-side {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding: 65px;
+        background: rgba(255, 255, 255, .1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        width: 100%;
+        max-width: 400px;
+        cursor: pointer;
+        transition: 0.3s;
+        transform-origin: center;
+    }
+.btn-silver{
+    background-color: #C0C0C0 !important;
+    color: rgb(39, 39, 39) !important;
+}
+.btn-gold{
+    background-color: #ffc130d5 !important;
+    color: #fff !important;
+}
+
+.btn-silver:hover{
+    background-color: #9c9c9c !important;
+    color: #fff !important;
+}
+.btn-gold:hover{
+    background-color: #fab514d5 !important;
+    color: #fff !important;
+}
+.hero .container .dividor .left-side:hover, .hero .container .dividor .right-side:hover{
+    transform: scale(1.05);
+}
+
+.hero .container .dividor .left-side{
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+html[dir="rtl"] .hero .container .dividor .left-side{
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+.hero .container .dividor .right-side{
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+html[dir="rtl"] .hero .container .dividor .right-side{
+    margin-right: 40px;
+    margin-left: auto;
+}
+
+.hero .container .dividor .left-side .top, .hero .container .dividor .right-side .top{
+    position: relative;
+    z-index: 999;
+    margin-bottom: 40px;
+}
+.hero .container .dividor .left-side .top::before, .hero .container .dividor .right-side .top::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #C0C0C0;
+    filter: blur(70px);
+    border-radius: 50%;
+}
+
+.hero .container .dividor .right-side .top::before{
+    background-color: #FFC130 !important;
+}
+
+.hero .container .dividor .left-side .top h3, .hero .container .dividor .right-side .top h3{
+ color: #C0C0C0;
+ font-size: 40px;
+ font-weight: 700;
+ text-transform: uppercase;
+}
+.container .dividor .right-side .top h3{
+    color: #FFC130 !important;
+}
+
+.hero .container .dividor .left-side .top span, .hero .container .dividor .right-side .top span{
+    color: white;
+    display: block;
+    margin-top: -14px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.hero .container .dividor .left-side .middle, .hero .container .dividor .right-side .middle{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.hero .container .dividor .left-side .middle .lefto, .hero .container .dividor .right-side .middle .lefto{
+    position: relative;
+}
+
+
+
+html[dir="rtl"] .hero .container .dividor .left-side .middle .lefto::after, html[dir="rtl"] .hero .container .dividor .right-side .middle .lefto::after{
+    right: auto;
+    left: 0;
+}
+
+.hero .container .dividor .left-side .middle div, .hero .container .dividor .right-side .middle div{
+    padding: 20px;
+}
+
+.hero .container .dividor .left-side .middle h4, .hero .container .dividor .right-side .middle h4{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.hero .container .dividor .right-side .middle h4{
+    color: #FFC130 !important;
+}
+.hero .container .dividor .right-side .middle h4 sub{
+    color: white !important;
+}
+
+.hero .container .dividor .left-side .middle span, .hero .container .dividor .right-side .middle span {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    display: block;
+    margin-top: -3px;
+}
+
+.hero .container .dividor .left-side .bottom ul, .hero .container .dividor .right-side .bottom ul{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+html[dir="rtl"] .hero .container .dividor .left-side .bottom ul, html[dir="rtl"] .hero .container .dividor .right-side .bottom ul{
+    text-align: right;
+}
+
+.hero .container .dividor .left-side .bottom ul li, .hero .container .dividor .right-side .bottom ul li{
+    color: white;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+}
+
+html[dir="rtl"] .hero .container .dividor .left-side .bottom ul li, html[dir="rtl"] .hero .container .dividor .right-side .bottom ul li{
+    padding-left: 0;
+    padding-right: 22px;
+}
+
+.hero .container .dividor .left-side .bottom ul li::after, .hero .container .dividor .right-side .bottom ul li::after{
+    content: url("../../../images/get-started/check-silver.png");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 10px;
+}
+
+html[dir="rtl"] .hero .container .dividor .left-side .bottom ul li::after,html[dir="rtl"] .hero .container .dividor .right-side .bottom ul li::after{
+    left: auto;
+    right: 0;
+}
+
+.hero .container .dividor .right-side .bottom ul li::after{
+    content: url("../../../images/get-started/check-gold.png") !important;
+}
+
