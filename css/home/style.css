@@ -1342,3 +1342,31 @@ margin-left: 68px!important;}
 			#nav-pc{display: none;}
 
 		}
+
+
+		@media only screen and (max-width: 700px) {
+			body{border:3px solid red}
+		}
+
+
+		@media only screen and (max-width: 600px) {
+			body{border:3px solid green}
+		}
+
+
+		@media only screen and (max-width: 500px) {
+			body{border:3px solid blue}
+		}
+
+
+		@media only screen and (max-width: 400px) {
+			body{border:3px solid yellow}
+		}
+
+
+		@media only screen and (max-width: 300px) {
+			body{border:3px solid black}
+		}
+
+
+		
