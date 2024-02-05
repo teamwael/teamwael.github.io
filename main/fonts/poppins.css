@@ -1,0 +1,88 @@
+/***
+  * extra bold 800
+  * bold 700
+  * semo bold 600
+  * medium 500
+  * medium-italic 500
+  * regular 400
+  * light 300
+***/
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("poppins/Poppins-ExtraBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("poppins/Poppins-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("poppins/Poppins-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("poppins/Poppins-Medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("poppins/Poppins-MediumItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("poppins/Poppins-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("poppins/Poppins-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'unbounded';
+  font-weight: bold;
+  font-display: swap;
+  src: url("unbounded/Unbounded-Medium.ttf") format('truetype');
+}
+
+.f-poppins fw-bolder{
+  font-family: 'unbounded';
+  font-weight: bold;
+}
+
+
+
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    src: url("Cairo-VariableFont_slnt%2cwght.ttf") format('truetype');
+}
+
+
+
+

@@ -1,0 +1,117 @@
+/** additive-1 **/
+/****************/
+
+.additive-1{
+    background-image: url("../../../images/home/about-bg.png");
+    background-position: bottom right;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+html[dir="rtl"] .additive-1{
+    padding-right: 55px;
+}
+
+.additive-1::after{
+    content: url("../../../images/home/additive-dot.svg");
+    position: absolute;
+    top: -50px;
+    right: -20%;
+    width: fit-content;
+    height: fit-content;
+    transform: scale(0.8);
+}
+
+html[dir="rtl"] .additive-1::after{
+    right: auto;
+    left: -20%;
+}
+
+.additive-1 h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    position: relative;
+    width: fit-content;
+    letter-spacing: 2px;
+}
+
+.additive-1 h2::before{
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #707070ba;
+    font-size: 2em;
+    transform: translate(-120%,-70%);
+}
+
+html[dir="rtl"] .additive-1 h2::before{
+    top: auto;
+    bottom: 0;
+    transform: translate(-120%,70%);
+}
+
+.additive-1 h2::after{
+    content: "\f10e";
+    font-weight: 700;
+    font-family: "Font Awesome 5 Free"; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #707070ba;
+    font-size: 2em;
+    transform: translate(120%,70%);
+}
+
+html[dir="rtl"] .additive-1 h2::after{
+    bottom: auto;
+    top: 0;
+    transform: translate(120%,-70%);
+}
+
+.additive-1 p {
+    margin-bottom: 1.9em;
+    font-size: 1.2em;
+    font-weight: 400;
+    max-width: 450px;
+}
+
+.additive-1 button{
+    background-color: #fff;
+    color: var(--textColor);
+    width: 100%;
+    max-width: 220px;
+    padding: 12px;
+    font-weight: 400;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+}
+
+.additive-1 button:hover{
+    background-color: var(--textColor);
+    color: white !important;
+    border: 1px solid white;
+}
+
+.additive-1 button:hover a{
+    color: white !important;
+
+}
+
+.additive-1 button a{
+    color: black !important;;
+}

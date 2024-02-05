@@ -1,0 +1,180 @@
+/** about section style **/
+/*************************/
+
+.about{
+    background-image: url("../../../images/home/about-bg.png");
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    background-position: top left;
+}
+.about .dividor{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.about-content{
+    padding: 40px 30px ;
+    background-image: linear-gradient(to top right, #ffffff0c,#ffffff6b);
+    border-radius: 8px;
+    max-width: 600px;
+    min-height: 760px;
+    border: 1px solid #ffffff7e;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.about .about-content::before{
+    content: url("../../../images/home/dots.png");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    transform: translate(-40%,40%);
+}
+
+.about-content h2 {
+    padding: 0 15px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+
+html[dir="rtl"] .about-content h2 {
+
+    line-height: 1.5;
+   
+}
+.about-content ul li {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1em;
+    white-space: pre-line;
+}
+.about-content ul li:first-child{
+    margin-bottom: 25px;
+}
+
+.about-content ul li span{
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.about-content.spoonsor h2{
+    margin-bottom: 0;
+}
+.about-content.spoonsor ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    white-space: pre-line;
+}
+    .about-content.spoonsor ul li p {
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 0;
+        white-space: pre-line;
+        padding-bottom: 0;
+    }
+.about-content.spoonsor ul li:nth-child(1) p{
+    margin-top: -55px;
+}
+.about-content.spoonsor ul li:nth-child(3) p{
+    margin-top: -30px;
+}
+    .about-content.spoonsor ul li p span {
+        color: var(--mainColor);
+        font-weight: 800;
+        white-space: pre-line;
+    }
+
+.about-content.pasto ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    white-space: pre-line;
+}
+    .about-content.pasto ul li h4 {
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+.about-content.pasto ul li h4 span{
+    color: var(--mainColor);
+    font-weight: 800;
+}
+
+    .about-content.pasto ul li p {
+        padding: 20px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        white-space: pre-line;
+    }
+
+.about .swiper{
+    max-width: 600px;
+    margin: 0;
+}
+
+.about .swiper-pagination-2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    margin-left: 20px !important;
+    background-color: #171717 !important;
+    border: 1px solid white !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    opacity: 1 !important;
+    
+}
+
+.about .swiper-pagination-bullet:first-child{
+    margin-left: 0 !important;
+}
+
+.about .swiper-pagination-bullet-active{
+    background-color: white !important;
+}
+
+.about-content.spoonsor .socialito {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.about .about-content.spoonsor .socialito{
+    margin-top: 40px;
+}
+
+.about-content.spoonsor .socialito li {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    white-space: pre-line;
+}
+.about-content.spoonsor .socialito li i{
+    margin-right: 5px;
+}
+    .about-content.spoonsor .socialito li span {
+        color: white;
+        white-space: pre-line;
+    }

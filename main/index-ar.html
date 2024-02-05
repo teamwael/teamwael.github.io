@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/flags/logo.png">
+  <!-- Add lightbox2 CSS and JavaScript files -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Lightbox CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lightbox Gallery</title>
+
+  <!-- Include BaguetteBox CSS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Include Magnific Popup CSS and JavaScript -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+  
+      <title>WAEL ABDEL-WAHAB </title>
+      <style>
+        .grid-layout{
+            display: grid;
+            height: auto;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto;
+        }
+        .social-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .social-float-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3b5998;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .social-float-button:hover {
+                background-color: #2f4a88;
+            }
+
+        .social-float-icons {
+            position: absolute;
+            display: none;
+            bottom: 70px;
+            transition: .4s;
+            overflow: hidden;
+            height: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+            .social-float-icons a {
+                display: block;
+                margin-bottom: 5px;
+                color: #666;
+                transition: all 0.3s ease;
+                font-size: 20px;
+            }
+
+                .social-float-icons a:hover {
+                    color: #3b5998;
+                }
+
+        .social-float.open .social-float-button {
+            background-color: #2f4a88;
+        }
+
+        .social-float.open .social-float-icons {
+            display: flex;
+            animation: show .2s linear forwards;
+        }
+
+        @keyframes show {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 180px;
+            }
+        }
+
+
+        .watch-div {
+            position: relative;
+            display: block
+        }
+
+            .watch-div .text {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.212);
+                text-align: center;
+            }
+
+                .watch-div .text .icon {
+                    font-size: 55px;
+                }
+
+                .watch-div .text p {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: left;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    margin: 0
+                }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- indicator nav -->
+    <!-- start -->
+    <div class="indicator-nav d-none d-md-flex">
+        <div class="active"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- end -->
+    <!-- navbar -->
+    <!-- start -->
+    <nav style="z-index: 9999;" class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container">
+
+<a href="index.html" style="text-decoration: none;"> 
+<img src="images/logo all in one.png" id="nav-logo">
+
+</a>
+
+
+
+<!-- 
+            <a class="navbar-brand" href="index.html">
+                <span class="f-poppins fw-bolder">
+                    <img src="images/logo home page.png" style="max-width: 40%;">
+WAEL ABDEL-WAHAB     <br>      <img src="images/Untitled-1.png" style="max-width: 40%;" id="cwael-signature">       </span>
+            </a>
+        -->
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-line"></span>
+                <span class="navbar-toggler-line"></span>
+                <span class="navbar-toggler-line"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item" id="nav-pc">
+                        <a class="nav-link active" href="index.html">الرئيسية/a>
+                    </li>
+
+                    <li class="nav-item" id="nav-pc">
+                        <a class="nav-link" href="cwael/programs-ar.html">البرامج</a>
+                    </li>
+
+
+                    <li class="nav-item" id="nav-pc">
+                        <a class="nav-link" href="cwael/Getstarted-ar.html">برامج التدريب اونلاين</a>
+                    </li>
+
+                    <li class="nav-item" id="nav-pc">
+                        <a class=" nav-link" href="about-ar.html">
+                             المزيد عني
+                        </a>
+                    </li>
+
+                        <!-- Nav - Mob -->
+
+
+                        <li class="nav-item d-xl-none">
+                            <a class="nav-link active" href="index.html">الرئيسية</a>
+                        </li>
+
+                        <li class="nav-item d-xl-none">
+                            <a class="nav-link" href="cwael/programs-ar.html">البرامج</a>
+                        </li>
+
+
+                        <li class="nav-item d-xl-none">
+                            <a class="nav-link" href="cwael/Getstarted-ar.html">برامج التدريب اونلاين</a>
+                        </li>
+
+                        <li class="nav-item d-xl-none">
+                            <a class=" nav-link" href="about-ar.html">
+                                المزيد عني
+                            </a>
+                        </li>
+
+                        
+
+
+
+                        <li class="nav-item pointer text-center d-flex align-items-center">
+                            <button class=" btn mx-auto btn-warning ">
+                                <a class="text-white" href="CalorieCalculator-ar.html">
+                                    حاسبة السعرات الحرارية
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item pointer text-center d-flex align-items-center">
+
+
+
+<style>
+    .lang-btn {
+        border: 1px solid;
+        padding: 3px 9px !important;
+        border-radius: 6px;
+    }
+</style>
+
+    <a href="index.html" class="nav-link ar-font lang-btn my-2 my-xl-0 mx-auto" title="English">
+        English
+    </a>
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+
+    <!-- end -->
+    <!-- general style -->
+<link rel="stylesheet" href="css/general/style.css">
+
+<!-- bootstrap CSS -->
+<link rel="stylesheet" href="lib/boststrap/bootstrap.min.css">
+
+<!-- fontawesome CSS -->
+<link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+
+<!-- swiper CSS -->
+<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+
+<!-- navbar style -->
+<link rel="stylesheet" href="css/common-component/nav/nav.css">
+<link rel="stylesheet" href="lib/HTML5-Video-Lightbox-VideoPopup/css/videopopup.css">
+
+<!-- home style -->
+<link rel="stylesheet" href="css/home/style.css">
+
+<style>
+    body {
+        position: relative;
+    }
+
+    .indicator-nav {
+        background-color: rgba(0, 0, 0, 0.659);
+        position: fixed;
+        z-index: 1600;
+        top: 50%;
+        right: 10px;
+        width: 50px;
+        height: 200px;
+        transform: translateY(-50%);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    html[dir="rtl"] .indicator-nav {
+        right: auto;
+        left: 10px;
+    }
+
+    .indicator-nav div {
+        background-color: white;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+        .indicator-nav div.active {
+            background-color: #FFF;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+    .transformation ul li img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+</style>
+<!-- hero section -->
+<!-- start -->
+<div id="" class="page">
+
+    <header class="hero desktop">
+
+        <div class="container">
+            <div class="dividor col-md-6">
+                <h2 class="">
+                    قصة وراء كل تحول </h2>
+                <p class="fw-bold">
+                    لدى الجميع قصة ليرويها خلال رحلة التحول. تأكد من أنك تحول عقلك وجسمك مع مدرب لديه معرفة كبيرة.
+                </p>
+                <div style="max-width: 100%;" class="btn-bg w-auto row row-cols-2 g-3">
+                    <div class="col-auto">
+                        <button class="w-auto"><a href="cwael/GetStarted.html">ابدأ الآن</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div style="  " class="hero-mobile mobile">
+        <div class="img-con  ">
+            <video controls autoplay muted>
+                <source src="videos/cwael-mob.mov">
+            </video>
+        </div>
+        <div class="container" id="intro-video-mob">
+            <div class="dividor" style="bottom: 0; color:white">
+                <h2 class="mb-3 p-2" style="color:white">
+                    مستر أولمبيا مصر 2021
+                </h2>
+                <h2 class="mb-3 p-2" style="color:white" id="themoment-head">
+                    "لحظة الفوز لا تقدر بثمن."
+                </h2>
+                <a class="w-75 mx-auto" href="cwael/GetStarted.html" style="text-align: center;">احصل على برنامج</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end -->
+<!-- our services section -->
+<!-- start -->
+<div id="servies" class="page">
+    <section class="our-services desktop">
+        <div class="container">
+            <h2 class="">
+                خدماتنا.
+            </h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="dividor">
+                            <div class="img-con">
+                                <img src="images/screen.jpg">
+                                <div class="text-center py-2 d-none d-md-block">
+                                    <a class="glightbox btn btn-dark px-4 py-2" href="videos/cwael.mp4">شاهد الآن <i
+                                            class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="our-services-content">
+                                <h4 class="fw-bold">
+                                    خطة تغذية مخصصة
+                                </h4>
+                                <p>
+                                    خطة تغذية كاملة استنادًا إلى اختبار الجسم الخاص بك وهدفك، كل شيء مصمم وفقًا لروتين عملك
+                                    ونمط حياتك للأفضل.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dividor">
+                            <div class="img-con">
+                                <img src="images/screen.jpg">
+                                <div class="text-center py-2 d-none d-md-block">
+                                    <a class="glightbox btn btn-dark px-4 py-2" href="videos/cwael.mp4">شاهد الآن <i
+                                            class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="our-services-content">
+                                <h4 class="fw-bold">
+                                    كتب تمارين اللياقة
+                                </h4>
+                                <p>
+                                    تقديم مقاطع فيديو مفصلة لكل تمرين للتأكد من أنك تقوم بالتقنية الصحيحة والأفضل أثناء التمرين
+                                    كما لو كنت معك في الصالة الرياضية.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dividor">
+                            <div class="img-con">
+                                <img src="images/screen.jpg">
+                                <div class="text-center py-2 d-none d-md-block">
+                                    <a class="glightbox btn btn-dark px-4 py-2" href="videos/cwael.mp4">شاهد الآن <i
+                                            class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="our-services-content">
+                                <h4 class="fw-bold">
+                                    تدريب فردي عبر الإنترنت
+                                </h4>
+                                <p>
+                                    التواصل مباشرة مع المدرب نفسه وائل عبد الوهاب عبر واتساب لأي أسئلة تتعلق بالبرنامج وأيضًا
+                                    إجراء فحوصات ومتابعات أسبوعية للتأكد من أنك على الطريق الصحيح.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <br> <br>
+
+    <div class="our-services-mobile mobile">
+        <div class="container" id="service-one">
+            <img src="images/working.png">
+            <h4>تدريب أونلاين علي أكمل وجه</h4>
+            <p> كمدرب أونلاين، تعاملت مع أكثر من 2000 عميل، أنا ملتزم بمتابعة عملائي في جميع أنحاء العالم، وتقديم خدماتي يومياً على مدار 24 ساعة. أنا متحمس لعملي وأجد سعادة هائلة في مساعدة الآخرين على تحقيق أهدافهم، حيث أؤمن أن هناك <span
+                    style="color:#33fc67"> قصة وراء كل تحول </span>.
+            </p>
+        </div>
+
+        <br>
+        <div class="container" id="service-two">
+            <img src="images/khater.jpg">
+            <h4>قد تكون أنت التحول القادم!</h4>
+            <p> هذه صورة لي مع أول عميل لي على الإطلاق! محمد خاطر في عام 2016.
+                (أخ قبل أن يكون عميلاً) قصة رائعة وراء تحوله الطبيعي  في خلال 20 أسبوع فقط! على الرغم أنه صاحب شركة، إلا أنه كان ملتزماً بالخطة اليومية بدقة. كنت حريصًا جدًا على مساعدته خلال تحوله حيث انه كان متحمسًا للغاية لتحقيق هدفه.
+            </p>
+        </div>
+
+
+        <br>
+        <div class="container" id="service-three">
+            <img src="images/shady.jpg">
+            <h4>لا شيء مستحيل .. مع شغف كبير وجهد</h4>
+            <p> شادي محروس شخص يعمل بجد كان يدرس الهندسة المدنية وهو أحد أعز أصدقائي وعملائي، نجح في تحقيق هدفه وحققنا المركز الثامن في بطولة أحمد علي في فئة كمال الأجسام.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<style>
+		@media only screen and (max-width: 400px) {
+            #service-three h4
+{
+    font-size: 19px;
+  }
+
+  #service-two h4
+{
+    font-size: 19px;
+  }
+
+
+  #service-one h4
+{
+    font-size: 19px;
+  }
+
+}
+
+</style>
+
+<!-- 
+
+                <div class="our-services-mobile mobile">
+            <div class="container">
+                <h2 class="my-4">
+                </h2>
+                <ul>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/working.png"
+                                     alt="one-on- one &#xD;&#xA;follow up" >
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">
+                                    ONLINE COACHING AT ITS FINEST
+                                </h4>
+                                <p>
+                                    As an online coach, worked with more than 2000 clients, I am dedicated to serving clients all over the whole world, providing my services 24/7. I am passionate about my work and find immense joy in helping others achieve their goals as I believe that there is <span style="color:#33fc67"> a story behind each transformation</span> .                               </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="img-con">
+                                <img src="images/khaterr.jpg"
+                                     alt="one-on- one &#xD;&#xA;follow up" >
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">
+                                    ONLINE COACHING AT ITS FINEST
+                                </h4>
+                                <p>
+                                    As an online coach, worked with more than 2000 clients, I am dedicated to serving clients all over the whole world, providing my services 24/7. I am passionate about my work and find immense joy in helping others achieve their goals as I believe that there is <span style="color:#33fc67"> a story behind each transformation</span> .                               </p>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="img-con">
+                                <img src="images/khaterr.jpg"
+                                     alt="one-on- one &#xD;&#xA;follow up" >
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">
+                                    ONLINE COACHING AT ITS FINEST
+                                </h4>
+                                <p>
+                                    As an online coach, worked with more than 2000 clients, I am dedicated to serving clients all over the whole world, providing my services 24/7. I am passionate about my work and find immense joy in helping others achieve their goals as I believe that there is <span style="color:#33fc67"> a story behind each transformation</span> .                               </p>
+                            </div>
+                        </li>
+
+
+
+
+
+                            <li>                             
+                                
+
+                                <div class="img-con">
+                                    <img src="images/khaterr.jpg"
+                                         alt="one-on- one &#xD;&#xA;follow up">
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold">
+                                        YOU MIGHT BE THE NEXT TRANSFORMATION
+                                    </h4>
+                                    <p>
+                                        This is a picture for me and my first client EVER! Mohamed khater in 2016’’
+                                        (A brother before being a client)
+                                        A great story behind his natural transformation as a CEO in just 20 Weeks!</span>     </p>
+                                </div>
+                            </li>
+    
+
+                            <li>
+                                <div class="img-con">
+                                    <img src="images/working.png"
+                                         alt="one-on- one &#xD;&#xA;follow up" id="services-1img">
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold">
+                                        ONLINE COACHING AT ITS FINEST
+                                    </h4>
+                                    <p>
+                                        As an online coach, worked with more than 2000 clients, I am dedicated to serving clients all over the whole world, providing my services 24/7. I am passionate about my work and find immense joy in helping others achieve their goals as I believe that there is <span style="color:#33fc67"> a story behind each transformation</span> .                               </p>
+                                </div>
+                            </li>
+    
+
+
+                        -->
+
+<!-- 
+
+
+                        <li>
+                            <div class="img-con">
+                                <img src="images/d3b0de01-7778-4f77-a57f-b5d1f215eeacabout_bg.jpg"
+                                     alt="phone call weekly&#xD;&#xA; (with me)">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">
+                                    phone call weekly&#xD;&#xA; (with me)
+                                </h4>
+                                <p>
+                                    Weekly Personal Accountability, Motivation And Support From Me, Offering You                                         Guidance                                         And The Chance To Adjust Your Plan As You Progress Or Your Needs/ Goals Change                                         Or                                         Develop.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/a81b0ab5-c615-4f85-8594-0e72389f1317custom_nutrition.jpg"
+                                     alt="CUSTOM &#xD;&#xA;NUTRITION PLAN">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">
+                                    CUSTOM &#xD;&#xA;NUTRITION PLAN
+                                </h4>
+                                <p>
+                                    Healthy, Nutritious, Non-Restrictive Meal Plans Tailored Around You - Your Job,                                         Lifestyle, Goals &amp; Dietary Requirements And Your Budget Also                                          Designed To Enable You To Enjoy A Tasty Varied Diet Making It Sustainable In The                                         Long Term
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/fdc203ec-8ac0-40b0-9723-96c502d7cc3cebooks.jpg"
+                                     alt="e-books explaining how&#xD;&#xA; to prepare your meals">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">
+                                    e-books explaining how&#xD;&#xA; to prepare your meals
+                                </h4>
+                                <p>
+                                    Most Online Trainers Don&#x27;t Teach You How To Do This. But These Videos Teach You                                         How                                         To Prepare Your Meals In 50 Different Ways. To Enjoy A Tasty And Varied Diet                                         That                                         Makes It Sustainable In The Long Term
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/4efd820f-8e8b-47d0-b356-3566bbedc5f6workouts.jpg"
+                                     alt="WORKOUT E-BOOKS&#xA0;&#xD;&#xA;explained by VIDEO">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">
+                                    WORKOUT E-BOOKS&#xA0;&#xD;&#xA;explained by VIDEO
+                                </h4>
+                                <p>
+                                    It&#x27;s One Thing Knowing What To Do, But Most Online Coaches Don&#x27;t Teach You HOW To                                         Do                                         It.                                         &lt;br&gt;These Videos Teach You The Training Theory As Well As Specific Tutorials On                                         Key                                         Exercises. Created Especially By Me To Maximise Your Potential And Ensure You                                         Cannot                                         Fail To                                         Train Effectively.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-con">
+                                <img src="images/19f34c1f-095e-4a7e-a103-9006846aa735nutrition_and_workouts.jpg"
+                                     alt="NUTRITION and WORKOUTS &#xD;&#xA;EDUCATION VIDEOS">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold">
+                                    NUTRITION and WORKOUTS &#xD;&#xA;EDUCATION VIDEOS
+                                </h4>
+                                <p>
+                                    Learn All The Tools You&#x27;ll Need To Maintain Your Results For Life.                                        Make Sure You Know Not Only What Needs To Be Done, But Why. Learn How To Modify                                         Your                                         Diet To                                         Make It Enjoyable, Sustainable, And Effective Around Changing Goals.
+                                </p>
+                            </div>
+                        </li>
+
+-->
+                </ul>
+
+            </div>
+
+            <a href="#" onclick="openVideo()" class="rounded-3 overflow-hidden w-100 glightbox watch-div">
+                <div class="text">
+                  <i class="fa fa-play icon"></i>
+                  <p>شاهد الآن</p>
+                </div>
+              </a>
+            
+          
+              <!-- Modal container -->
+              <div id="videoModal">
+                <!-- Close button for the modal -->
+                <button onclick="closeVideo()">اغلق</button>
+                <!-- Video container -->
+                <div id="videoContainer">
+                  <video controls>
+                    <source src="videos/cwael.mp4" type="video/mp4">
+                    متصفحك لا يدعم عنصر الفيديو.
+                  </video>
+                </div>
+              </div>
+            
+              <script>
+                // Function to open the video modal and play the video
+                function openVideo() {
+                  var video = document.querySelector('video');
+                  video.play().catch(function() {
+                    // Autoplay failed, let's rely on user interaction
+                    document.getElementById("videoModal").style.display = "block";
+                  });
+                }
+            
+                // Function to close the video modal
+                function closeVideo() {
+                  document.getElementById("videoModal").style.display = "none";
+                }
+              </script>
+            
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+<!-- end -->
+<div id="about" class="page">
+    <!-- about section -->
+        <!-- start -->
+        <section dir="ltr" class="about desktop">
+            <div class="container">
+                <div class="dividor">
+                    <div class="swiper swiper-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="about-content">
+                                    <h2>
+                                        عن
+ك.وائل عبد الوهاب                                    </h2>
+                                    <ul>
+                                        <li>البطولات التي شارك فيها</li>
+                                        <li><span>المركز السابع</span> Muscle Mania 2015</li>
+                                        <li><span>المركز الثالث</span> بطولة أحمد علي 2016</li>
+                                        <li><span>المركز الرابع</span> بطولة اللياقة البدنية 2017</li>
+                                        <li><span>المركز السابع</span> بطولة التيتانيوم 2018</li>
+                                        <li><span>المركز السادس</span> بطولة أحمد علي 2018</li>
+                                        <li><span>بيبلز تشامب</span> Balance pro 2019</li>
+                                        <li><span>المركز الرابع</span> بطولة العرب 2019</li>
+                                        <li><span>المركز الأول</span> مستر أولمبيا مصر 2021</li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-content pasto">
+                                    <!-- 
+                                    <h2>
+                                        AOnline coaching                                         with me in the past                                         3 years ?!
+                                    </h2>
+                                    -->
+                                    <ul>
+                                        <li>
+                                            <h4>
+                                                <span>أكثر من 2000 </span>
+                                                عميل
+                                            </h4>
+                                            <p>
+                                                لقد عملت مع أكثر من 2000 عميل في 65 دولة مختلفة حول العالم.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>1500</span>
+                                                هدف
+                                            </h4>
+                                            <p>
+                                                وصل العملاء إلى هدف رائع خلال رحلتهم خلال برنامج التدريب عبر الإنترنت معنا
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="about-mobile mobile">
+            <ul>
+                <li>
+                    <div class="about-content">
+                        <h2>
+                            عن
+                            ك.وائل عبد الوهاب                           </h2>
+                        <ul>
+                            <li>البطولات التي شارك فيها</li>
+                                <li><span>المركز السابع</span> Muscle Mania 2015</li>
+                                <li><span>المركز الثالث</span> بطولة أحمد علي 2016</li>
+                                <li><span>المركز الرابع</span> بطولة اللياقة البدنية 2017</li>
+                                <li><span>المركز السابع</span> بطولة التيتانيوم 2018</li>
+                                <li><span>المركز السادس</span> بطولة أحمد علي 2018</li>
+                                <li><span>بيبلز تشامب</span> Balance pro 2019</li>
+                                <li><span>المركز الرابع</span> بطولة العرب 2019</li>
+                                <li><span>المركز الأول</span> مستر أولمبيا مصر 2021</li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="about-content spoonsor px-3 ">
+                        <h2>
+                            شركات الرعاية
+                        </h2>
+                        <ul>
+                            <li>
+                                <img src="images/home/lion.png" alt="Ko-Squad">
+                                <p>
+                                    <span>Ko-Squad</span> هو الراعي الرئيسي لي، بدأنا عقدنا في عام 2017 وحتى الآن ما زلنا نعمل معًا
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/home/wing.png" alt="Braga">
+                                <p>
+                                    <Span>Braga</Span> هو راعي للملابس الرياضية، بدأ عقدنا في عام 2020 وحتى الآن نحن لازلنا نعمل معًا. كنت أول عارض للياقة البدنية ذكرًا والآن أنا العارض الرئيسي للشركة.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/home/ko.png" alt="Ko-Gear">
+                                <p>
+                                    <span>Ko-Gear</span> هو راعي للملابس الرياضية، بدأ عقدنا في عام 2021 وحتى الآن نحن لازلنا نعمل معًا
+                                </p>
+                            </li>
+                        </ul>
+
+
+                    <a target="_blank" class="text-white" href="https://web.facebook.com/waaelabdelwahab?mibextid=opq0tG&_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" class="text-white" href="https://www.tiktok.com/@willyowahab"><i class="fab fa-tiktok"></i></a>
+                    <a target="_blank" class="text-white" href="https://www.instagram.com/willyowahab/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" class="text-white" href="https://wa.me/2001033973763"><i class="fab fa-whatsapp"></i></a>
+
+                        <ul class="socialito p-0 justify-content-center d-flex flex-wrap text-nowrap">
+                            <li class="mb-0 mx-1">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>WAEL ABDEL-WAHAB</span>
+                            </li>
+                            <li class="mb-0 mx-1">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>TEAM EK</span>
+                            </li>
+                            <li class="mb-0 mx-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>WHATSAPP</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="about-content pasto">
+                        <h2 class="lh-1">
+                            <span>أكثر من 2000 </span>
+                            عميل
+    </h2>
+                        <ul>
+                            <li>
+                                <h4>
+                                    <span>2000+</span>
+                                    عميل
+                                </h4>
+                                <p>لقد تعاملت مع أكثر من 2000 عميل في 65 دولة مختلفة حول العالم.</p>
+                            </li>
+                            <li>
+                                <h4>
+                                    <span>1500</span>
+                                    هدف
+                                </h4>
+                                <p class="mb-0 pb-0">
+                                 
+                                    وصل العملاء إلى هدف رائع خلال رحلتهم خلال برنامج التدريب الأونلاين معي
+                                            
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end -->
+
+    <!-- additive-1 section -->
+    <!-- start -->
+    <section class="additive-1 desktop">
+        <div class="container">
+                <h2>
+                    كل أسئلتك تجد إجابتها
+                    معي.
+                </h2>
+                <p>لتحقيق هدفك يتطلب الكثير من العوامل الهامة، ولكن المتابعة هي أولويتنا.</p>
+                <button><a href="cwael/GetStarted.html">ابدأ الآن</a></button>
+        </div>
+    </section>
+    <!-- end -->
+</div>
+
+<div id="transform" class="page">
+    <!-- transformation section -->
+    <!-- start -->
+    <section class="transformation desktop">
+        <div class="container">
+
+                <h2 class="w-75">
+                    بعض من تحولات عملائي
+                </h2>
+                <ul>
+                        <li>
+                            <div>
+                                <div data-text="بعد" class="after h-100">
+                                    <a href="#" data-lightbox="gallery">
+                                        <img src="images/transformations/Abdallah El-Asran.jpg" class="pop-out">
+                                    </a>
+                                    <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;">عبد الله الأسران<br>8 أسابيع من التحول</p>
+                                                                        </div>
+                            </div>
+                        </li>
+
+
+                        <div id="myModal" class="modal">
+                            <span class="close-button" onclick="closeModal()">×</span>
+                            <img id="modalImage" src="" alt="Enlarged Image">
+                            <p id="modalCaption"></p>
+                        </div>
+                    
+
+<style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 80%;
+            max-height: 80%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal p {
+            color: #fff;
+            font-size: 23px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+
+        .pop-out {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .pop-out:hover {
+      transform: scale(1.2);
+        position: relative;
+        z-index: 999999999;
+
+    }
+
+    /* Scaling effect for other images during hover */
+    .pop-out:hover ~ li div {
+      transform: scale(0.8);
+    }
+
+
+    .transformation ul li img:hover{        position: relative;
+        z-index: 999999999;
+
+    }
+    
+    .transformation ul li{padding: 30px;     box-shadow: none;}
+
+
+
+    </style>
+
+
+
+
+</style>
+
+
+                        <script>
+                            function openModal(imageSrc, caption) {
+                                var modal = document.getElementById('myModal');
+                                var modalImage = document.getElementById('modalImage');
+                                var modalCaption = document.getElementById('modalCaption');
+                    
+                                modal.style.display = 'flex';
+                                modalImage.src = 'images/transformations/' + imageSrc;
+                                modalCaption.innerText = caption;
+                    
+                                // Close modal on click outside the image
+                                modal.onclick = function() {
+                                    closeModal();
+                                };
+                    
+                                // Prevent closing modal when clicking on the image
+                                modalImage.onclick = function(event) {
+                                    event.stopPropagation();
+                                };
+                    
+                                // Close modal on Esc key press
+                                document.addEventListener('keydown', function(event) {
+                                    if (event.key === 'Escape') {
+                                        closeModal();
+                                    }
+                                });
+                            }
+                    
+                            function closeModal() {
+                                var modal = document.getElementById('myModal');
+                                modal.style.display = 'none';
+                            }
+                        </script>
+                                        
+
+
+                        <!--
+                        <li>
+                            <div>
+                                <div data-text="after" class="after h-100">
+                                    <img src="images/8313004f-6def-4af4-bdc6-0b87a5cb6dc7A838472C-5A35-40FF-804C-88A0E4D3A4CD.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div data-text="before" class="before h-100">
+                                    <img src="images/510e6a7c-ac61-4e86-bf72-0e192665364853C9CFD1-D23C-4676-AAA8-37B1B0D7B057.jpg">
+                                </div>
+                            </div>
+                        </li>
+-->
+<!-- 
+
+<div id="lightbox" class="lightbox">
+    <span class="close-icon" onclick="closeLightbox()">&times;</span>
+    <img id="lightboxImage" src="" alt="Lightbox Image">
+  </div>
+
+-->
+
+<li>
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/Ahmed Maher 4 months of transformation DUBAI.jpeg" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> أحمد ماهر
+            <br> 16 أسبوعًا من التحول</p>
+
+        </div>
+    </div>
+</li>
+
+
+
+<li id="trans-excep">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/Ahmed Shafeei 4 months of transformation.jpeg" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> أحمد شفيق
+            <br> 16 أسبوعًا من التحول</p>
+
+
+        </div>
+    </div>
+</li>
+
+
+<li style="margin-top:95px">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/Hassan Karamany 4 months of transformation.jpeg" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> حسن كرماني
+            <br> 16 أسبوعًا من التحول</p>
+
+        </div>
+    </div>
+</li>
+
+
+
+<li style="margin-top:95px">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/IMG_7842.JPG" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> داليا إيهاب 
+            <br> 12 أسبوعًا من التحول</p>
+
+        </div>
+    </div>
+</li>
+
+
+
+<li style="margin-top:95px">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/IMG_9238.JPG" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> محمد خاطر 
+            <br> 16 أسبوعًا من التحول</p>
+
+        </div>
+    </div>
+</li>
+
+
+
+
+<li style="margin-top:95px">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/Mohamed GadAllah Hamood 4 months of transformation KWUAIT.jpeg" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> محمد جاب الله 
+            <br> 16 أسبوعًا من التحول</p>
+
+        </div>
+    </div>
+</li>
+
+
+<li style="margin-top:95px">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/Mohamed Tantawy 6 months of transformation EGYPT.jpeg" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> محمد طنطاوي 
+            <br> 24 أسبوعًا من التحول</p>
+
+
+        </div>
+    </div>
+</li>
+
+
+<li style="margin-top:95px">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/Mostafa khaled.jpg" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> مصطفى خالد 
+            <br> 21 يومًا من التحول</p>
+
+        </div>
+    </div>
+</li>
+
+
+
+
+<li style="margin-top:95px">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/Omar EL-Rawy 4 months of transformation GERMANY (2).jpeg" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> عمر الراوي 
+            <br> 16 أسبوعًا من التحول</p>
+
+        </div>
+    </div>
+</li>
+
+
+
+
+<li style="margin-top:95px">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/Sara Kadri 6 months of transformation GERMANY.jpeg" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> سارة قدري 
+            <br> 24 أسبوعًا من التحول</p>
+
+        </div>
+    </div>
+</li>
+
+<li style="margin-top:95px">
+    <div>
+        <div data-text="بعد" class="قبل h-100">
+            <img src="images/transformations/WhatsApp Image 2023-10-03 at 4.26.27 PM (5).jpeg" class="pop-out">
+            <p style="font-size: 23px; margin-bottom: 50px; text-align: center; font-family: 'Poppins'; font-weight: 600; padding-top: 13px;"> شادي محروس 
+            <br> 16 أسبوعًا من التحول</p>
+
+        </div>
+    </div>
+</li>
+
+
+
+</ul>
+
+<style>
+/* Your existing styles here */
+
+/* Lightbox */
+.lightbox {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+text-align: center;
+}
+
+.lightbox img {
+display: inline-block;
+margin-top: 5%;
+max-width: 80%;
+max-height: 80%;
+}
+
+.close-icon {
+position: absolute;
+top: 10px;
+right: 10px;
+color: white;
+font-size: 24px;
+cursor: pointer;
+}
+</style>
+
+
+
+
+
+<br><br> <br> 
+<div class="carriar">
+
+
+<a href="https://www.instagram.com/waaelabdelwahab_team?igsh=MWR0OGp0YTBza2VqcQ%3D%3D" target="_blank" id="carriar-viewmore">
+<button>
+     المزيد من العملاء
+
+</button>
+</a>
+
+<a href="https://www.instagram.com/reel/CwXwhAkN98n/?igsh=MWN6eG9mZjJxdG1mdQ%3D%3D" class=" glightbox" id="carriar-watchnow">
+<button>
+    الشهادات <i class="fa-solid fa-play"></i>
+</button>
+</a>
+
+
+</div>
+</div>
+</section>
+<div class="transformation-mobile mobile">
+<div class="container">
+<h2 class="w-75 mx-auto">
+بعض من تحولات عملائي
+</h2>
+
+<style>
+	@media only screen and (max-width: 400px) {
+
+.transformation-mobile h2{width:89%!important}
+    }
+
+</style>
+
+
+
+
+<div class="transformation-content" data-before-text="بعد" data-after-text="قبل">
+<div class="swiper swiper-3">
+<div class="swiper-wrapper">
+
+
+    <div class="swiper-slide">
+        <div class="d-flex ">
+            <div>
+                <div data-text="قبل" class="بعد">
+                    <img style="width:100%;height:auto" src="images/transformations/Mohamed GadAllah Hamood 4 months of transformation KWUAIT.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/Ahmed Maher 4 months of transformation DUBAI.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/Abdallah El-Asran.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/Ahmed Shafeei 4 months of transformation.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/Hassan Karamany 4 months of transformation.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/IMG_7842.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/IMG_9238.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/Mohamed Tantawy 6 months of transformation EGYPT.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/Mostafa khaled.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/Sara Kadri 6 months of transformation GERMANY.jpeg">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/Omar EL-Rawy 4 months of transformation GERMANY (2).jpeg">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/WhatsApp Image 2023-10-03 at 4.26.27 PM (5).jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/abdelrahman.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/adham.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/ahmed elzamly.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/Ahmed hesham 3 months of transformation EGYPT.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/Ahmed Youssef 3 months of transformation EGYPT.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/ahmed-x.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/ahmed.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/Ali Adham 4 months of transformation EGYPT.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/amir.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/amr.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/cr.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/david.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/doha.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/frank.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/Hamza Adham 4 months of transformation EGYPT.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/hassan.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/IMG_3716.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/IMG_3723.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/IMG_3724.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/IMG_3726.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/IMG_3744.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/IMG_3762.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/IMG_3766.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/inas.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/kamilia.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/khaterr.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/kn.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/Levan 4 months of transformation GERMANY.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/marwan.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/marwan2.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/mohab2.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/Mohamed Mubarak 3 months of transformation EGYPT.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/nezar.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/omar m.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/omar toba.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/omar.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/refaat.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/Roman Sebastain 3 months of transformation ENGLAND.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/salem.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/salma.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/salwa.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/samoul.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/sandra.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/tan.JPG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex ">
+                                        <div>
+                                            <div data-text="قبل" class="بعد">
+                                                <img style="width:100%;height:auto" src="images/transformations/all/Yazan AlSoury 6 months of transformation SYRIA.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <p id="youmight-p"> ربما تكون أنت التحول القادم!</p>
+
+
+                <div class="text-center mt-3" id="startprogram-btn-1">
+                
+                    <a href="cwael/Getstarted-ar.html" target="_blank"
+                       class="btn btn-dark w-100 mb-4 px-4 py-2 " style="min-width: 150px">
+                        ابدأ الآن
+                    </a>
+                </div>
+                <br> 
+                
+                <div class="col-lg-12 col-md-12">
+                    <p id="howdo_p"> كيف يعمل التدريب الأونلاين معي؟</p>
+
+                    <iframe width="700" height="700"
+                            src="videos/cwael.mp4" style="margin: auto; display: table;" id="youmightbe_video">
+                    </iframe>
+                </div>
+
+        
+
+
+
+                
+                <div class="text-center mt-3" id="startprogram-btn">
+                    <a href="cwael/Getstarted-ar.html" target="_blank"
+                       class="btn btn-dark w-100 mb-4 px-4 py-2 " style="min-width: 150px">
+                        ابدأ برنامجك الآن
+                    </a>
+                </div>
+                
+                <!-- 
+                <div>
+                    <a href="images/a933261b-2771-4a7c-9204-91d4241211a8trim.22FB58C0-639F-4FF5-98E0-8A645E5626D1.qt" class="rounded-3 overflow-hidden w-100 glightbox watch-div">
+                        <div class="text">
+                            <i class="fa fa-play icon"></i>
+                            <p>
+                                شاهد الآن
+                            </p>
+                        </div>
+                        <img  onerror="this.src = 'images/home/mobile/watch.png'" src="images/e78baa9f-782a-47e1-9d84-7103a3ce5143TRANSFORMATIONS.jpg" class="h-100 w-100 " style="object-fit: cover;" alt="">
+                    </a>
+                </div>
+                -->
+                </div>
+                <!-- end -->
+                </div>
+                
+                <section class="additive-2 desktop">
+                    <div class="container"> 
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <h2> شاهد ما يقوله عملاؤنا </h2>
+                            </div>
+                
+                            <div class="col-lg-12 col-md-12">
+                                <iframe width="400" height="400"
+                                        src="https://www.youtube-nocookie.com/embed/Psw7l1ON0sA" style="margin: auto; display: table;">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- end -->
+                <!-- additive-2 section -->
+                <!-- start -->
+
+            <!-- 
+                <section class="additive-2 desktop">
+                    <div class="container" id="ready-sec-container">
+                        <h2>
+                            هل أنت جاهز للخطوة التالية؟
+                            هل أنت جاهز لتغيير حياتك؟
+                        </h2>
+                        <div>
+                            <span>ابدأ رحلتك الآن</span>
+                            <button id="getstarted_btn"><a href="cwael/GetStarted.html">ابدأ الآن</a></button>
+                        </div>
+                    </div>
+                </section>
+                <div class="additive-2-mobile mobile">
+                    <div class="logo-bg">
+                        <img src="images/flags/logo.png" />
+                    </div>
+                    <div class="dark-bg">
+                    </div>
+                    <div class="container ">
+                        <h2 class="text-center text-md-start">
+                            هل أنت جاهز لاتخاذ
+                            الخطوة التالية؟
+                            هل أنت جاهز لتغيير
+                            حياتك؟
+                        </h2>
+                        <div class="mt-5">
+                            <button><a href="cwael/Getstarted-ar.html">ابدأ الآن</a></button>
+                        </div>
+                    </div>
+                </div>
+                
+</div>
+-->
+
+<footer class="bg-black py-3" style="z-index: 999; position: relative; bottom: 0; width: 100%;">
+    <div class="container">
+
+        <div class="row align-items-center justify-content-center justify-content-md-between">
+            <div class="col-md-4 col-12 text-center text-md-start">
+                <a class="navbar-brand" href="index-ar.html">
+                 <img src="images/logo all in one.png" style="max-width: 100%;" id="footer-img">
+
+                 </a>
+                <!-- 
+                <a class="navbar-brand" href="index.html">
+                    <span class="f-poppins fw-bolder" style="color:white">
+                        <img src="images/TEAM WAELLABDELWAHABBBLAST2.png" style="max-width: 60%;">
+    WAEL ABDEL-WAHAB                </span>
+                </a>
+    -->
+
+
+            </div>
+
+
+            <div class="col-md-4 col-12 mb-2 mb-md-0 text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-3 fs-5 text-white">
+                    <a target="_blank" class="text-white" href="https://web.facebook.com/waaelabdelwahab?mibextid=opq0tG&_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" class="text-white" href="https://www.tiktok.com/@willyowahab"><i class="fab fa-tiktok"></i></a>
+                    <a target="_blank" class="text-white" href="https://www.instagram.com/willyowahab/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" class="text-white" href="https://wa.me/2001033973763"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12 text-white text-center text-md-end">
+                    <span>
+                         &copy; 2024. جميع الحقوق محفوظة
+                    </span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ??  Modal For POPUP -->
+<div class="modal fade " id="PopupStart" tabindex="-1" role="dialog" aria-labelledby="PopupStartLabel"
+     aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div style="background-color: #171717" class="modal-content  bg-opacity-100 shadow rounded-2 text-white">
+            <div class="modal-header text-center p-4 border-0">
+                <h4 class="modal-title mb-0 fw-bold" id="PopupStartLabel">
+                    اشترك للحصول على أحدث العروض والمزيد
+                </h4>
+            </div>
+            <div class="modal-body ">
+                <div class="form-group mb-3">
+                    <!-- <label class="control-label text-white mb-2">Name</label> -->
+                    <input required maxlength="200" type="text" id="Name" class="form-control"
+                           placeholder="اسمك">
+                    <small id="NameError" style="display:none" class="text-danger  error">هذا الحقل مطلوب</small>
+                </div>
+                <div class="form-group mb-3">
+                    <!-- <label class="control-label text-white mb-2">Age</label> -->
+                    <input required maxlength="200" type="number" id="Age" class="form-control"
+                           placeholder="عمرك">
+                    <small id="AgeError" style="display:none" class="text-danger  error">هذا الحقل مطلوب</small>
+                </div>
+                <div class="form-group mb-3">
+                    <!-- <label class="control-label text-white mb-2">Mobile phone</label> -->
+                    <input required maxlength="200" type="text" id="Phone" class="form-control"
+                           placeholder="الجوال">
+                    <small id="PhoneError" style="display:none" class="text-danger  error">
+                        يجب إدخال رقم هاتفك الحقيقي
+                    </small>
+                </div>
+            </div>
+            <div class="modal-footer text-center border-0">
+                <div class="row row-cols-2 justify-content-center w-100">
+                    <div class="col-auto">
+                        <button id="closeModal" type="button" class="btn btn-light ">
+                            إغلاق
+                        </button>
+                    </div>
+
+                    <div class="col-auto">
+                        <button type="button" id="modalSubBtn" onclick="Add()" class="btn btn-warning  text-white">
+                            اشترك الآن
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jquery js -->
+<script src="lib/jquery/jquery-3.6.3.min.js"></script>
+
+<!-- bootstrap js -->
+<script src="lib/boststrap/bootstrap.bundle.min.js"></script>
+
+<!-- swiper js -->
+<script src="lib/swiper/swiper-bundle.min.js"></script>
+<!-- navbar script -->
+<script src="js/nav.js"></script>
+<script>
+    var myModal;
+    $(document).ready(function () {
+        const lastPopup = sessionStorage.getItem('last-pop');
+        if (!JSON.parse(localStorage.getItem('subscribed')) && (!lastPopup || ((new Date().valueOf()) - (new Date(JSON.parse(lastPopup)).valueOf())) > 1000)) {
+            myModal = new bootstrap.Modal(document.getElementById('PopupStart'), {
+                keyboard: true,
+                backdrop: true,
+            });
+
+            $('#closeModal').on('click', () => {
+                myModal.hide();
+            })
+
+            setTimeout(() => {
+                myModal.show();
+
+                sessionStorage.setItem('last-pop', new Date().valueOf())
+            }, 100);
+        }
+
+
+    })
+
+
+    function Add() {
+
+        let Name = $('#Name').val();
+        let Age = $('#Age').val();
+        let Phone = $('#Phone').val();
+        let formData = new FormData();
+        $('.error').hide();
+        let isValid = true;
+        if (Name == "" || Name == null) {
+            $('#NameError').show();
+            isValid = false;
+        }
+        if (Phone == "" || Phone == null || !phonePattern.test(Phone)) {
+            $('#PhoneError').show();
+            isValid = false;
+
+        }
+        if (isValid) {
+            $('#add').prop('disabled', true);
+            $('#modalSubBtn').prop('disabled', true);
+            $('#modalSubBtn').html('<span class="fa fa-spinner fa-spin"></span>');
+
+            formData.append("Name", Name)
+            formData.append("Age", Age)
+            formData.append("Phone", Phone);
+            formData.append("Type", "GLOBAL");
+
+
+            $.ajax({
+                url: "/Admin/AddSubscriber",
+                type: "POST",
+                data: formData,
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                success: function (result) {
+                    if (result == true) {
+                        localStorage.setItem('subscribed', true);
+                        myModal.hide();
+                    }
+
+                },
+            });
+        }
+
+    }
+</script>
+<script src="lib/HTML5-Video-Lightbox-VideoPopup/js/videopopup.js"></script>
+<script>
+    $(function () {
+        $("video[autoplay]").each(function () { this?.play(); });
+        const lightbox = GLightbox({
+            touchNavigation: false,
+            loop: false,
+            autoplayVideos: true
+        });
+    });
+</script>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 80,
+        speed: 700,
+        loop: true,
+        grabCursor: true,
+        effect: "fade",
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    var swiper2 = new Swiper(".swiper-2", {
+        spaceBetween: 80,
+        speed: 1000,
+
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination-2",
+            clickable: true,
+        },
+    });
+
+    var swiper3 = new Swiper(".swiper-3", {
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+
+
+
+    <div class="social-float">
+        <div class="social-float-button">
+            <i class="fas fa-message"></i>
+        </div>
+        <div class="social-float-icons">
+            <a target="_blank" class="text-white" href="https://web.facebook.com/waaelabdelwahab?mibextid=opq0tG&_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" class="text-white" href="https://www.tiktok.com/@willyowahab"><i class="fab fa-tiktok"></i></a>
+            <a target="_blank" class="text-white" href="https://www.instagram.com/willyowahab/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" class="text-white" href="https://wa.me/2001033973763"><i class="fab fa-whatsapp"></i></a>
+</div>
+    </div>
+    <script>
+        $('.navbar-nav .nav-item').click(function () {
+            $('.navbar-collapse').removeClass('show')
+        });
+
+        $('.social-float').on('click', function () {
+            $('.social-float').toggleClass('open')
+        })
+
+        $(document).on('click', function (event) {
+            if (!$(event.target).is(".social-float") && !$(event.target).closest(".social-float").length) {
+
+                $('.social-float').removeClass('open')
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        const phonePattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+        $(document).ready(function () {
+
+           
+        });
+     
+
+
+        function ipLookUp() {
+            $('#spinner').show();
+            var country = "";
+            // Set endpoint and your access key
+            const url = 'https://freeipapi.com/api/json';
+            $.ajax({
+                url: url,
+                method: 'GET',
+                success: function (data) {
+                    if (data) {
+                        country = data.countryName;
+                        $('#spinner').hide();
+                        if (country.includes("Egypt")) {
+                            $('.usdView').hide();
+
+                        } else {
+                            $('.egpView').hide();
+                        }
+                    }
+                },
+                error: function (error) {
+                    $('#spinner').hide();
+                    $('.usdView').hide();
+                }
+            });
+        }
+    </script>
+<!-- 
+<script>
+    $(document).ready(function () {
+        // Add the 'data-mfp-src' attribute to your image links
+        $('ul li div[data-text="after"] a').attr('data-mfp-src', 'gallery');
+
+        // Initialize Magnific Popup
+        $('[data-mfp-src="gallery"]').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+            removalDelay: 300,
+            mainClass: 'mfp-fade',
+            closeOnContentClick: true,
+            closeBtnInside: false,
+            closeMarkup: '<button title="%title%" type="button" class="mfp-close">×</button>'
+        });
+    });
+  </script>
+-->
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha384-kyDk8mITQb5FXiRG3IedRN5sYlw3e2vl7JS9c5MhEj9jMq2O/9SMk9NUZx3hiECr" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-jf0fO0DSTNZ56yGzrTIc6IziDg1VVypwg3h6xInzAlPzzXt1e0s8Z0FehmPXw17g" crossorigin="anonymous"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+
+</html>
