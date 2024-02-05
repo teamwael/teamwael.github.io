@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-www.eslamkamel.co	TRUE	/	FALSE	1999999999	.AspNetCore.Antiforgery.y5JsCWBhzM8	CfDJ8NprX5ha9RBGkmDsGRClDZe7ZfqmW52TAl0nUXZCAJrJbvv6rZrAdA4nbzwCtZwyJWAb7FFuT3DMUZmqPavOBK8tb50JjzZnlCNHVw_PyX67-88k0Dkh7GyuURUsM1KFurkB2InNcLKOgirE8IH0abg
-www.eslamkamel.co	TRUE	/	FALSE	1999999999	samesite	strict
-www.eslamkamel.co	TRUE	/	FALSE	1999999999	.AspNetCore.Culture	c%3Den-US%7Cuic%3Den-US
-
